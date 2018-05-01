@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `gallery`, // you can use multiple source-filesystem instances
-        path: `${__dirname}/data/gallery`,
+        name: `images`, // you can use multiple source-filesystem instances
+        path: `${__dirname}/data/images`,
       },
     },
     'gatsby-transformer-sharp',

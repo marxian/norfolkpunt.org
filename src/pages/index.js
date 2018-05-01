@@ -1,12 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/boats/">Boats</Link>
+    <h1>Broadland Legend</h1>
+    <p>22ft long, pointed at both ends, 22sqm of sail area, no maximum spinnaker size, no minimum weight.</p>
   </div>
 )
 

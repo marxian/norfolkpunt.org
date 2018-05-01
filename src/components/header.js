@@ -12,6 +12,10 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Link to="/boats/">Boats</Link>
+      <Link to="/pictures/">Pictures</Link>
+      <Link to="/events/">Events</Link>
+      <Link to="/documents/">Details</Link>
     </Box>
   </Flex>
 )
