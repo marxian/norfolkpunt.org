@@ -24,9 +24,9 @@ export default class Pictures extends Component {
     return (
       <Flex flexWrap="wrap">
         {pictures.map(({ picture }, i) => (
-          <Box flex='1 1 auto' w={[1, 1/2, 1/3, 1/5]} px={1} key={picture.id}>
+          <Box w={[1, 1/2, 1/3, 1/5]} px={1} key={picture.id}>
             <FocusTrigger role="button" onClick={() => this.setState({focusIndex: i})}>
-              <Img sizes={picture.sizes}/>
+              <Img sizes={picture.sizes} />
             </FocusTrigger>
           </Box>
         ))}

@@ -3,7 +3,7 @@ import { Flex, Box } from 'grid-styled'
 import Img from 'gatsby-image'
 
 export default ({ data }) => {
-    const { boat, mainImage } = data
+    const { boat } = data
     return (
         <Flex>
             <Box w={1/2}>
@@ -13,7 +13,7 @@ export default ({ data }) => {
             <Box w={1/2} px={1}>
                 <Img
                     alt={boat.name}
-                    sizes={mainImage.sizes}
+                    sizes={boat.mugshot.sizes}
                 />
             </Box>
         </Flex>
@@ -21,14 +21,14 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-    query BoatDetailsQuery($slug: String!, $slugre: String!) {
+    query BoatDetailsQuery($slug: String!) {
         boat: boatsJson(fields: { slug: { eq: $slug } }) {
-  	        name    
-        }
-        mainImage: imageSharp(id: { regex: $slugre }) {
-            sizes(maxWidth: 1240 ) {
-                ...GatsbyImageSharpSizes
-            }
+            name 
+            mugshot {
+                sizes(maxWidth: 600) {
+                    ...GatsbyImageSharpSizes
+                }
+            }    
         }
     }
 `;
