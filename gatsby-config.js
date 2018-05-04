@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/norfolkpunt.org',
   siteMetadata: {
     title: 'Norfolk Punt Owners Association',
   },

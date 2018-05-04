@@ -32,7 +32,7 @@
     "start": "gatsby serve",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages",
     "precommit": "lint-staged",
     "format": "prettier --write '{*/**,.}/*.{js,json}'",
     "lint": "eslint .",
