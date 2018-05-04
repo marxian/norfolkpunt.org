@@ -11,16 +11,20 @@ const Header = ({ siteTitle }) => (
   <Flex>
     <Box>
       <h1>
-        <Link
-          to="/"
-        >
-          {siteTitle}
-        </Link>
+        <Link to="/">{siteTitle}</Link>
       </h1>
-      <Link activeStyle={activeStyle} to="/boats/">Boats</Link>
-      <Link activeStyle={activeStyle} to="/pictures/">Pictures</Link>
-      <Link activeStyle={activeStyle} to="/events/">Events</Link>
-      <Link activeStyle={activeStyle} to="/documents/">Details</Link>
+      <Link activeStyle={activeStyle} to="/boats/">
+        Boats
+      </Link>
+      <Link activeStyle={activeStyle} to="/pictures/">
+        Pictures
+      </Link>
+      <Link activeStyle={activeStyle} to="/events/">
+        Events
+      </Link>
+      <Link activeStyle={activeStyle} to="/documents/">
+        Details
+      </Link>
     </Box>
   </Flex>
 )

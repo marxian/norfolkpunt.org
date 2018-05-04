@@ -7,9 +7,7 @@ export default ({ data }) => (
     <ul>
       {data.boats.edges.map(({ boat }) => (
         <li key={boat.fields.slug}>
-          <Link to={boat.fields.slug}>
-            {boat.name}
-          </Link>
+          <Link to={boat.fields.slug}>{boat.name}</Link>
         </li>
       ))}
     </ul>

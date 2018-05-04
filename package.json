@@ -4,18 +4,18 @@
   "version": "1.0.0",
   "author": "Rupert Redington <rupert@neontribe.co.uk>",
   "dependencies": {
-    "gatsby": "1.9.250",
-    "gatsby-image": "1.0.48",
-    "gatsby-link": "1.6.40",
-    "gatsby-plugin-react-helmet": "2.0.10",
+    "babel-plugin-styled-components": "1.5.1",
+    "gatsby": "1.9.259",
+    "gatsby-image": "1.0.51",
+    "gatsby-link": "1.6.44",
+    "gatsby-plugin-react-helmet": "2.0.11",
     "gatsby-plugin-react-next": "1.0.11",
-    "gatsby-plugin-sharp": "1.6.43",
+    "gatsby-plugin-sharp": "1.6.44",
     "gatsby-plugin-styled-components": "2.0.11",
     "gatsby-plugin-typography": "1.7.18",
-    "gatsby-source-filesystem": "1.5.34",
+    "gatsby-source-filesystem": "1.5.35",
     "gatsby-transformer-json": "1.0.17",
-    "gatsby-transformer-sharp": "1.6.23",
-    "gh-pages": "1.1.0",
+    "gatsby-transformer-sharp": "1.6.24",
     "grid-styled": "4.1.0",
     "lodash": "4.17.10",
     "react-helmet": "5.2.0",
@@ -23,19 +23,26 @@
     "styled-components": "3.2.6",
     "typography-theme-lawton": "0.15.10"
   },
-  "keywords": [
-    "Norfolk Punt"
-  ],
+  "keywords": ["Norfolk Punt"],
   "license": "MIT",
+  "lint-staged": {
+    "*.{js,json}": ["prettier --write", "git add"]
+  },
   "scripts": {
     "start": "gatsby serve",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
-    "format": "prettier --write 'src/**/*.js'",
+    "precommit": "lint-staged",
+    "format": "prettier --write '{*/**,.}/*.{js,json}'",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "1.12.0"
+    "eslint": "4.19.1",
+    "gh-pages": "1.1.0",
+    "husky": "0.14.3",
+    "lint-staged": "7.0.5",
+    "prettier": "1.12.1"
   }
 }

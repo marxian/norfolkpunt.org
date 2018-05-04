@@ -14,7 +14,7 @@ export default class Pictures extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      focusIndex: null
+      focusIndex: null,
     }
   }
 
@@ -24,20 +24,29 @@ export default class Pictures extends Component {
     return (
       <Flex flexWrap="wrap">
         {pictures.map(({ picture }, i) => (
-          <Box w={[1, 1/2, 1/3, 1/5]} px={1} key={picture.id}>
-            <FocusTrigger role="button" onClick={() => this.setState({focusIndex: i})}>
+          <Box w={[1, 1 / 2, 1 / 3, 1 / 5]} px={1} key={picture.id}>
+            <FocusTrigger
+              role="button"
+              onClick={() => this.setState({ focusIndex: i })}
+            >
               <Img sizes={picture.sizes} />
             </FocusTrigger>
           </Box>
         ))}
-        {(focusIndex !== null) && (
+        {focusIndex !== null && (
           <Lightbox
             mainSrc={pictures[focusIndex].picture.original.src}
-            nextSrc={pictures[(focusIndex + 1) % pictures.length].picture.original.src}
-            prevSrc={pictures[(focusIndex + pictures.length - 1) % pictures.length].picture.original.src}
+            nextSrc={
+              pictures[(focusIndex + 1) % pictures.length].picture.original.src
+            }
+            prevSrc={
+              pictures[(focusIndex + pictures.length - 1) % pictures.length]
+                .picture.original.src
+            }
             onMovePrevRequest={() =>
               this.setState({
-                focusIndex: (focusIndex + pictures.length - 1) % pictures.length,
+                focusIndex:
+                  (focusIndex + pictures.length - 1) % pictures.length,
               })
             }
             onMoveNextRequest={() =>
