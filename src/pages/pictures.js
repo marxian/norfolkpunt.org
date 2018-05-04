@@ -69,7 +69,7 @@ export const query = graphql`
         picture: node {
           id
           sizes(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
-            ...GatsbyImageSharpSizes
+            ...GatsbyImageSharpSizes_tracedSVG
           }
           original {
             src

@@ -23,7 +23,7 @@ export const query = graphql`
       name
       mugshot {
         sizes(maxWidth: 600) {
-          ...GatsbyImageSharpSizes
+          ...GatsbyImageSharpSizes_tracedSVG
         }
       }
     }
