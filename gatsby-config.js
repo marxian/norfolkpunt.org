@@ -14,21 +14,20 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`, // you can use multiple source-filesystem instances
+        name: 'images',
         path: `${__dirname}/data/images`,
+        plugins: ['gatsby-transformer-sharp', 'gatsby-plugin-sharp'],
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `boats`, // you can use multiple source-filesystem instances
+        name: 'boats',
         path: `${__dirname}/data/boats`,
+        plugins: ['gatsby-transformer-json'],
       },
     },
-    'gatsby-transformer-json',
   ],
 }

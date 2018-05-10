@@ -6,14 +6,33 @@
 
 const path = require('path')
 const _ = require('lodash')
+const fs = require('fs')
 
-let images = []
-
-exports.onCreateNode = ({ node, boundActionCreators }) => {
+exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
   const { createNodeField } = boundActionCreators
 
   if (node.internal.type === 'ImageSharp') {
-    images.push(node)
+    // Look for an appropriate notes file (<file>.meta.json) and connect it
+    const nodePath = getNode(node.parent).absolutePath
+    let rawMeta
+    try {
+      rawMeta = fs.readFileSync(`${nodePath}.meta.json`)
+    } catch (e) {
+      if (e.code !== 'ENOENT') {
+        throw e
+      }
+    }
+
+    if (rawMeta) {
+      let data = JSON.parse(rawMeta)
+      for (let o in data) {
+        createNodeField({
+          node,
+          name: o,
+          value: data[o],
+        })
+      }
+    }
   }
 
   if (node.internal.type === 'BoatsJson') {
@@ -25,11 +44,18 @@ exports.onCreateNode = ({ node, boundActionCreators }) => {
       value: slug,
     })
 
-    // Look for an appropriate image and connect it
-    const rex = new RegExp(slug)
-    const img = _.find(images, i => rex.test(i.id))
-    if (img) {
-      node.mugshot___NODE = img.id
+    // Scan nodes for an ImageSharp with a mugshot field set to our slug
+    const nodes = getNodes()
+    const mugshot = nodes.find(node => {
+      if (node.internal.type === 'ImageSharp') {
+        if (node.fields && node.fields.mugshot) {
+          return node.fields.mugshot === slug
+        }
+      }
+      return false
+    })
+    if (mugshot) {
+      node.mugshot___NODE = mugshot.id
     }
   }
 }
