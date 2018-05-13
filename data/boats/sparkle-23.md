@@ -1,0 +1,18 @@
+---
+name: Sparkle
+loa: 20
+handicap: null
+slug: sparkle-23
+builder: Dr Boreham Trent
+construction: Wood (Carvel)
+design: Traditional
+designer: Herbert Woods
+owners:
+  - from: 1930
+    to: null
+    owner: T H Gordon Wright
+category: boats
+sailNumber: 23
+yearBuilt: 1930
+
+---

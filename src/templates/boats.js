@@ -7,7 +7,7 @@ export default ({ data }) => {
   return (
     <Flex>
       <Box w={1 / 2}>
-        <h1>{boat.name}</h1>
+        <h1>{boat.frontmatter.name}</h1>
         <p>Some text about the boat I guess</p>
       </Box>
       {mugshot ? (
@@ -26,8 +26,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   query BoatDetailsQuery($slug: String!) {
-    boat: boatsJson(fields: { slug: { eq: $slug } }) {
-      name
+    boat: markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        name
+      }
       mugshot {
         sizes(maxWidth: 600) {
           ...GatsbyImageSharpSizes

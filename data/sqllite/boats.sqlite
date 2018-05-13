@@ -1,0 +1,7 @@
+SELECT
+localboats_boat.name as name, loa, year_built, handicap, sail_number, slug, previous_names,
+localboats_boatbuilder.name as builder,
+localboats_construction.name as construction,
+FROM localboats_boat
+INNER JOIN localboats_construction ON localboats_boat.construction_id=localboats_construction.id
+INNER JOIN localboats_boatbuilder ON localboats_boat.builder_id=localboats_boatbuilder.id;

@@ -10,8 +10,8 @@ export default ({ data }) => (
       <h1>Norfolk Punt Calendar</h1>
     </Box>
     {data.events.edges.map(({ event }) => (
-      <Box w={1} key={event.frontmatter.slug}>
-        <Link to={event.frontmatter.slug}>
+      <Box w={1} key={event.fields.slug}>
+        <Link to={event.fields.slug}>
           <h2>
             {event.frontmatter.title}
             &mdash;
@@ -28,13 +28,18 @@ export default ({ data }) => (
 
 export const query = graphql`
   query EventsList {
-    events: allMarkdownRemark {
+    events: allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: "events" } } }
+      sort: { order: ASC, fields: [frontmatter___date] }
+    ) {
       edges {
         event: node {
           excerpt
           frontmatter {
             date
             title
+          }
+          fields {
             slug
           }
         }

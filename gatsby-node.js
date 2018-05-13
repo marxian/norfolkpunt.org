@@ -13,12 +13,16 @@ function makeSlug(string) {
   return slugify(string, { lower: true })
 }
 
+const defaultImageFields = {
+  interest: 0,
+}
+
 exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
   const { createNodeField } = boundActionCreators
 
   if (node.internal.type === 'ImageSharp') {
     // Look for an appropriate notes file (<file>.meta.json) and connect it
-    const nodePath = getNode(node.parent).absolutePath
+    let nodePath = getNode(node.parent).absolutePath
     let rawMeta
     try {
       rawMeta = fs.readFileSync(`${nodePath}.meta.json`)
@@ -28,44 +32,44 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
       }
     }
 
-    if (rawMeta) {
-      let data = JSON.parse(rawMeta)
-      for (let o in data) {
-        createNodeField({
-          node,
-          name: o,
-          value: data[o],
-        })
-      }
+    let data = {
+      ...defaultImageFields,
+      ...(rawMeta ? JSON.parse(rawMeta) : {}),
     }
-  }
-
-  if (node.internal.type === 'BoatsJson') {
-    // Create a slug for page generation and link management
-    const slug = makeSlug(`${node.name} ${node.sailNumber}`)
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug,
-    })
-
-    // Scan nodes for an ImageSharp with a mugshot field set to our slug
-    const nodes = getNodes()
-    const mugshot = nodes.find(node => {
-      if (node.internal.type === 'ImageSharp') {
-        if (node.fields && node.fields.mugshot) {
-          return node.fields.mugshot === slug
-        }
-      }
-      return false
-    })
-    if (mugshot) {
-      node.mugshot___NODE = mugshot.id
+    for (let o in data) {
+      createNodeField({
+        node,
+        name: o,
+        value: data[o],
+      })
     }
   }
 
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = makeSlug(node.frontmatter.title)
+    let slug = makeSlug(node.frontmatter.title)
+    if (node.frontmatter.category === 'boats') {
+      slug = makeSlug(`${node.frontmatter.name} ${node.frontmatter.sailNumber}`)
+      createNodeField({
+        node,
+        name: `slug`,
+        value: slug,
+      })
+
+      // Scan nodes for an ImageSharp with a mugshot field set to our slug
+      const nodes = getNodes()
+      const mugshot = nodes.find(node => {
+        if (node.internal.type === 'ImageSharp') {
+          if (node.fields && node.fields.mugshot) {
+            return node.fields.mugshot === slug
+          }
+        }
+        return false
+      })
+      if (mugshot) {
+        node.mugshot___NODE = mugshot.id
+      }
+    }
+
     createNodeField({
       node,
       name: `slug`,
@@ -79,63 +83,26 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        boats: allBoatsJson {
+        pages: allMarkdownRemark {
           edges {
             node {
               fields {
                 slug
               }
-            }
-          }
-        }
-        events: allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/events/" } }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
-        }
-        meetings: allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/meetings/" } }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
+              frontmatter {
+                category
               }
             }
           }
         }
       }
     `).then(result => {
-      result.data.boats.edges.forEach(({ node }) => {
+      result.data.pages.edges.forEach(({ node }) => {
         createPage({
-          path: `/boats/${node.fields.slug}`,
-          component: path.resolve('./src/templates/boat.js'),
-          context: {
-            // Data passed to context is available in page queries as GraphQL variables.
-            slug: node.fields.slug,
-          },
-        })
-      })
-      result.data.events.edges.forEach(({ node }) => {
-        createPage({
-          path: `/events/${node.fields.slug}`,
-          component: path.resolve('./src/templates/event.js'),
-          context: {
-            // Data passed to context is available in page queries as GraphQL variables.
-            slug: node.fields.slug,
-          },
-        })
-      })
-      result.data.events.edges.forEach(({ node }) => {
-        createPage({
-          path: `/meetings/${node.fields.slug}`,
-          component: path.resolve('./src/templates/meeting.js'),
+          path: `/${node.frontmatter.category}/${node.fields.slug}`,
+          component: path.resolve(
+            `./src/templates/${node.frontmatter.category}.js`
+          ),
           context: {
             // Data passed to context is available in page queries as GraphQL variables.
             slug: node.fields.slug,

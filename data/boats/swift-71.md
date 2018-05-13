@@ -1,0 +1,18 @@
+---
+name: Swift
+loa: 22
+handicap: null
+slug: swift-71
+builder: Colin McDougall
+construction: Fibreglass
+design: Hardchine
+designer: Wyche and Coppock
+owners:
+  - from: 1980
+    to: 1980
+    owner: S J P Cooper
+category: boats
+sailNumber: 71
+yearBuilt: 1980
+
+---

@@ -2,21 +2,47 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Flex, Box } from 'grid-styled'
+import Img from 'gatsby-image'
+import styled from 'styled-components'
 
 import Header from '../components/header'
 
+const SiteWrapper = styled.div`
+  margin: 0 auto;
+`
+const ContentWrapper = styled.div`
+  z-index: 1;
+  position: relative;
+`
+
 const Layout = ({ children, data }) => (
-  <div>
+  <SiteWrapper>
     <Helmet
-      title={data.site.siteMetadata.title}
+      title={`${data.site.siteMetadata.title} ${
+        data.site.siteMetadata.subtitle
+      }`}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <Box w={1}>{children()}</Box>
-  </div>
+    <ContentWrapper>
+      <Header {...data.site.siteMetadata} />
+      <Box w={1}>{children()}</Box>
+    </ContentWrapper>
+    {false && (
+      <Img
+        sizes={data.background.sizes}
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          width: '100%',
+          height: '100%',
+        }}
+      />
+    )}
+  </SiteWrapper>
 )
 
 Layout.propTypes = {
@@ -26,10 +52,16 @@ Layout.propTypes = {
 export default Layout
 
 export const query = graphql`
-  query SiteTitleQuery {
+  query IndexQuery {
     site {
       siteMetadata {
         title
+        subtitle
+      }
+    }
+    background: imageSharp(id: { regex: "/background/" }) {
+      sizes(maxWidth: 1500) {
+        ...GatsbyImageSharpSizes
       }
     }
   }

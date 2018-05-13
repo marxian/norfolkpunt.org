@@ -24,7 +24,7 @@ export default class Pictures extends Component {
     return (
       <Flex flexWrap="wrap">
         {pictures.map(({ picture }, i) => (
-          <Box w={[1, 1 / 2, 1 / 3, 1 / 5]} px={1} key={picture.id}>
+          <Box w={[1, 1 / 2, 1 / 3, 1 / 5]} key={picture.id}>
             <FocusTrigger
               role="button"
               onClick={() => this.setState({ focusIndex: i })}
@@ -63,8 +63,11 @@ export default class Pictures extends Component {
 }
 
 export const query = graphql`
-  query AllPictures {
-    pictures: allImageSharp {
+  query GalleryPictures {
+    pictures: allImageSharp(
+      sort: { order: DESC, fields: [fields___interest] }
+      filter: { fields: { interest: { ne: -1 } } }
+    ) {
       edges {
         picture: node {
           id

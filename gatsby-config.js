@@ -1,7 +1,8 @@
 module.exports = {
   pathPrefix: '/norfolkpunt.org',
   siteMetadata: {
-    title: 'Norfolk Punt Owners Association',
+    title: 'Norfolk Punt',
+    subtitle: 'Owners Association',
   },
   plugins: [
     'gatsby-plugin-react-next',
@@ -24,17 +25,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'events',
-        path: `${__dirname}/data/events`,
+        path: `${__dirname}/data`,
         plugins: ['gatsby-transformer-remark'],
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'boats',
-        path: `${__dirname}/data/boats`,
-        plugins: ['gatsby-transformer-json'],
       },
     },
   ],
