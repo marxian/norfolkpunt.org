@@ -24,6 +24,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'events',
+        path: `${__dirname}/data/events`,
+        plugins: ['gatsby-transformer-remark'],
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'boats',
         path: `${__dirname}/data/boats`,
         plugins: ['gatsby-transformer-json'],

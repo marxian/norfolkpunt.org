@@ -28,21 +28,22 @@ export const query = graphql`
   query BoatDetailsQuery($slug: String!) {
     boat: boatsJson(fields: { slug: { eq: $slug } }) {
       name
-    }
-    mugshot: imageSharp(fields: { mugshot: { eq: $slug } }) {
-      sizes(maxWidth: 600) {
-        ...GatsbyImageSharpSizes
+      mugshot {
+        sizes(maxWidth: 600) {
+          ...GatsbyImageSharpSizes
+        }
+        original {
+          src
+        }
       }
-      original {
-        src
-      }
     }
+
     images: allImageSharp(filter: { fields: { boats: { in: [$slug] } } }) {
       edges {
         image: node {
           id
           sizes(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
-            ...GatsbyImageSharpSizes
+            ...GatsbyImageSharpSizes_tracedSVG
           }
           original {
             src

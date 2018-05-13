@@ -7,6 +7,11 @@
 const path = require('path')
 const _ = require('lodash')
 const fs = require('fs')
+const slugify = require('slugify')
+
+function makeSlug(string) {
+  return slugify(string, { lower: true })
+}
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
   const { createNodeField } = boundActionCreators
@@ -37,7 +42,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
 
   if (node.internal.type === 'BoatsJson') {
     // Create a slug for page generation and link management
-    const slug = `${node.name.toLowerCase()}-${node.sailNumber}`
+    const slug = makeSlug(`${node.name} ${node.sailNumber}`)
     createNodeField({
       node,
       name: 'slug',
@@ -58,6 +63,15 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
       node.mugshot___NODE = mugshot.id
     }
   }
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = makeSlug(node.frontmatter.title)
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
 }
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
@@ -65,7 +79,29 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allBoatsJson {
+        boats: allBoatsJson {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        events: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/events/" } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        meetings: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/meetings/" } }
+        ) {
           edges {
             node {
               fields {
@@ -76,14 +112,33 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       }
     `).then(result => {
-      result.data.allBoatsJson.edges.forEach(({ node }) => {
+      result.data.boats.edges.forEach(({ node }) => {
         createPage({
           path: `/boats/${node.fields.slug}`,
           component: path.resolve('./src/templates/boat.js'),
           context: {
             // Data passed to context is available in page queries as GraphQL variables.
             slug: node.fields.slug,
-            slugre: `/${node.fields.slug}/`,
+          },
+        })
+      })
+      result.data.events.edges.forEach(({ node }) => {
+        createPage({
+          path: `/events/${node.fields.slug}`,
+          component: path.resolve('./src/templates/event.js'),
+          context: {
+            // Data passed to context is available in page queries as GraphQL variables.
+            slug: node.fields.slug,
+          },
+        })
+      })
+      result.data.events.edges.forEach(({ node }) => {
+        createPage({
+          path: `/meetings/${node.fields.slug}`,
+          component: path.resolve('./src/templates/meeting.js'),
+          context: {
+            // Data passed to context is available in page queries as GraphQL variables.
+            slug: node.fields.slug,
           },
         })
       })
