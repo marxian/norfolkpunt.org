@@ -5,7 +5,15 @@ import Gallery from '../components/Gallery'
 
 export default ({ data }) => {
   const { boat, pictures } = data
-  const gallery = [{ picture: boat.mugshot }].concat(pictures.edges)
+
+  let gallery = []
+  if (boat.mugshot) {
+    gallery.push({ picture: boat.mugshot })
+  }
+  if (pictures) {
+    gallery = gallery.concat(pictures.edges)
+  }
+
   return (
     <Flex>
       <Box w={[1, 1 / 2]}>
