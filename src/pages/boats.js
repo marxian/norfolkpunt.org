@@ -4,18 +4,8 @@ import { Flex, Box } from 'grid-styled'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
-const Card = styled.div`
-  background-color: white;
-  padding: 0.5em;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-  transition: all 0.1s ease-in-out;
-  :hover {
-    transform: scale(1.02);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 5;
-  }
-`
+import Card from '../components/Card'
+import SubtleLink from '../components/SubtleLink'
 
 const Figure = styled.figure`
   margin: 0px;
@@ -31,17 +21,10 @@ const SailNo = styled.span`
   font-size: large;
 `
 
-const BoatLink = styled(Link)`
-  text-decoration: none;
-  :hover {
-    text-decoration: none;
-  }
-`
-
 const Boat = ({ boat, imageWanted }) => (
   <Box w={[1 / 2, 1 / 3, 1 / 3, 1 / 5]} p={1}>
     <Card>
-      <BoatLink to={boat.fields.slug}>
+      <SubtleLink to={boat.fields.slug}>
         <Figure>
           <Img sizes={boat.mugshot ? boat.mugshot.sizes : imageWanted.sizes} />
           <FigCaption>
@@ -49,7 +32,7 @@ const Boat = ({ boat, imageWanted }) => (
             <SailNo>{boat.frontmatter.sailNumber}</SailNo>
           </FigCaption>
         </Figure>
-      </BoatLink>
+      </SubtleLink>
     </Card>
   </Box>
 )

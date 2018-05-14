@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import { Flex, Box } from 'grid-styled'
 import styled from 'styled-components'
 
+import SubtleLink from './SubtleLink'
+
 const activeStyle = {
   color: 'grey',
   fontStyle: 'bold',
@@ -14,12 +16,6 @@ const HeaderContainer = styled(Flex)`
   box-shadow: 0 0 15px black;
   border-bottom: 2px solid #999;
   padding: 0.2em;
-`
-const HomeLink = styled(Link)`
-  text-decoration: none;
-  :hover {
-    text-decoration: none;
-  }
 `
 const NavLink = styled(Link)`
   color: white;
@@ -43,19 +39,19 @@ const Header = ({ title, subtitle }) => (
   <HeaderContainer>
     <Box w={[1, 1 / 3, 1 / 2]} p={1}>
       <h1 style={{ marginBottom: 0 }}>
-        <HomeLink to="/">
+        <SubtleLink to="/">
           <Title>{title}</Title> <Subtitle>{subtitle}</Subtitle>
-        </HomeLink>
+        </SubtleLink>
       </h1>
     </Box>
     <NavBox w={[1, 2 / 3, 1 / 2]} p={1}>
       <nav>
         <NavLink activeStyle={activeStyle} to="/boats/">
-          Boats
+          Punts
         </NavLink>
         <Separator />
         <NavLink activeStyle={activeStyle} to="/pictures/">
-          Pictures
+          Gallery
         </NavLink>
         <Separator />
         <NavLink activeStyle={activeStyle} to="/events/">

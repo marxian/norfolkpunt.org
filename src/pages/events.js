@@ -1,26 +1,26 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { Flex, Box } from 'grid-styled'
 import Img from 'gatsby-image'
 import { DateTime } from 'luxon'
+import Card from '../components/Card'
+import SubtleLink from '../components/SubtleLink'
 
 export default ({ data }) => (
   <div>
-    <Box>
-      <h1>Norfolk Punt Calendar</h1>
-    </Box>
     {data.events.edges.map(({ event }) => (
-      <Box w={1} key={event.fields.slug}>
-        <Link to={event.fields.slug}>
-          <h2>
-            {event.frontmatter.title}
-            &mdash;
-            {DateTime.fromISO(event.frontmatter.date).toLocaleString(
-              DateTime.DATE_MED
-            )}
-          </h2>
-        </Link>
-        <div dangerouslySetInnerHTML={{ __html: event.excerpt }} />
+      <Box m={3} key={event.fields.slug}>
+        <Card>
+          <SubtleLink to={event.fields.slug}>
+            <h2>
+              {event.frontmatter.title}
+              &mdash;
+              {DateTime.fromISO(event.frontmatter.date).toLocaleString(
+                DateTime.DATE_MED
+              )}
+            </h2>
+          </SubtleLink>
+          <div dangerouslySetInnerHTML={{ __html: event.excerpt }} />
+        </Card>
       </Box>
     ))}
   </div>

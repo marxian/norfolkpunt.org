@@ -30,7 +30,7 @@ const Layout = ({ children, data }) => (
       <Header {...data.site.siteMetadata} />
       <Box w={1}>{children()}</Box>
     </ContentWrapper>
-    {false && (
+    {true && (
       <Img
         sizes={data.background.sizes}
         style={{
