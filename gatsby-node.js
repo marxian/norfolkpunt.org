@@ -47,7 +47,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     let slug = makeSlug(node.frontmatter.title)
-    if (node.frontmatter.category === 'boats') {
+    if (node.frontmatter.category === 'punts') {
       slug = makeSlug(`${node.frontmatter.name} ${node.frontmatter.sailNumber}`)
       createNodeField({
         node,

@@ -7,6 +7,7 @@ module.exports = {
     indent: ['error', 2],
     'react/prop-types': 0,
     'prefer-reflect': 0,
+    'space-before-function-paren': 0,
   },
   globals: {
     graphql: false,

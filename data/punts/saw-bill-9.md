@@ -1,0 +1,18 @@
+---
+name: Saw Bill
+loa: 19
+handicap: null
+slug: saw-bill-9
+builder: W G Woods of Potter Heigham
+construction: Wood (Carvel)
+design: Traditional
+designer: Herbert Woods
+owners:
+  - from: 1927
+    to: null
+    owner: Arnold Churchill
+sailNumber: 9
+yearBuilt: 1927
+category: punts
+
+---

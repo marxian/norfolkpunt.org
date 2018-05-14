@@ -46,11 +46,11 @@ const Header = ({ title, subtitle }) => (
     </Box>
     <NavBox w={[1, 2 / 3, 1 / 2]} p={1}>
       <nav>
-        <NavLink activeStyle={activeStyle} to="/boats/">
+        <NavLink activeStyle={activeStyle} to="/punts/">
           Punts
         </NavLink>
         <Separator />
-        <NavLink activeStyle={activeStyle} to="/pictures/">
+        <NavLink activeStyle={activeStyle} to="/gallery/">
           Gallery
         </NavLink>
         <Separator />

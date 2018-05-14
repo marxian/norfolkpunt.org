@@ -31,13 +31,12 @@ var ownershipQuery = [
 ].join(' ')
 
 function write(boat) {
-  boat.category = 'boats'
   var out = {
     ...boat,
     sailNumber: boat.sail_number,
     yearBuilt: boat.year_built,
     previousNames: boat.previous_names,
-    category: 'boats',
+    category: 'punts',
   }
   delete out.previous_names
   delete out.year_built
@@ -48,7 +47,7 @@ function write(boat) {
 
   var yml = yaml.safeDump(out)
   fs.writeFile(
-    path.join(__dirname, '..', 'boats', out.slug + '.md'),
+    path.join(__dirname, '..', 'punts', out.slug + '.md'),
     `---\n${yml}\n---\n`,
     function(err) {
       if (err) {
