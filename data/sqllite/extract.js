@@ -1,3 +1,4 @@
+/* eslint-env node, es6 */
 var sqlite3 = require('sqlite3').verbose()
 var db = new sqlite3.Database('./sqlite.db')
 var fs = require('fs')
@@ -29,9 +30,6 @@ var ownershipQuery = [
   'ORDER BY localboats_ownership.owned_from desc',
 ].join(' ')
 
-var otherQuery =
-  'SELECT name, slug from localboats_boat WHERE localboats_boat.sail_number = 66'
-
 function write(boat) {
   boat.category = 'boats'
   var out = {
@@ -53,17 +51,23 @@ function write(boat) {
     path.join(__dirname, '..', 'boats', out.slug + '.md'),
     `---\n${yml}\n---\n`,
     function(err) {
-      err && console.error(err)
+      if (err) {
+        return console.error(err)
+      }
     }
   )
 }
 
 db.each(startQuery, function(err, row) {
-  err && console.log(err)
+  if (err) {
+    return console.error(err)
+  }
   var boat = row
   var db2 = new sqlite3.Database('./sqlite.db')
   db2.all(ownershipQuery, { $slug: row.slug }, function(err, owns) {
-    err && console.log(err)
+    if (err) {
+      return console.error(err)
+    }
     boat.owners = owns
     write(boat)
   })

@@ -1,6 +1,5 @@
 import React from 'react'
-import { Flex, Box } from 'grid-styled'
-import Img from 'gatsby-image'
+import { Box } from 'grid-styled'
 import { DateTime } from 'luxon'
 import Card from '../components/Card'
 import SubtleLink from '../components/SubtleLink'

@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { Flex, Box } from 'grid-styled'
+import { Box } from 'grid-styled'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
-import Header from '../components/header'
+import Header from '../components/Header'
 
 const SiteWrapper = styled.div`
   margin: 0 auto;

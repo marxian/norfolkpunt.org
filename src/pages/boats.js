@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { Flex, Box } from 'grid-styled'
 import Img from 'gatsby-image'
 import styled from 'styled-components'

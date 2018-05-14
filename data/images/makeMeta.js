@@ -1,3 +1,4 @@
+/* eslint-env node, es6 */
 var fs = require('fs')
 var image = process.argv[2]
 var slug = image.replace('.jpg', '')

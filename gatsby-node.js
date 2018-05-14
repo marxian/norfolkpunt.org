@@ -1,3 +1,4 @@
+/* eslint-env node, es6 */
 /**
  * Implement Gatsby's Node APIs in this file.
  *
@@ -5,7 +6,6 @@
  */
 
 const path = require('path')
-const _ = require('lodash')
 const fs = require('fs')
 const slugify = require('slugify')
 

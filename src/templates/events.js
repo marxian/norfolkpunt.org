@@ -1,6 +1,5 @@
 import React from 'react'
 import { Flex, Box } from 'grid-styled'
-import Img from 'gatsby-image'
 
 export default ({ data }) => {
   const { event } = data
