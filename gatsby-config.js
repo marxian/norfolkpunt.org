@@ -1,6 +1,6 @@
 /* eslint-env node */
 module.exports = {
-  pathPrefix: '/norfolkpunt.org',
+  pathPrefix: '/norfolkpunt',
   siteMetadata: {
     title: 'Norfolk Punt',
     subtitle: 'Owners Association',
