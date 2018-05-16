@@ -9,7 +9,7 @@ export default ({ data }) => (
     {data.events.edges.map(({ event }) => (
       <Box m={3} key={event.fields.slug}>
         <Card>
-          <SubtleLink to={event.fields.slug}>
+          <SubtleLink to={`/events/${event.fields.slug}`}>
             <h2>
               {event.frontmatter.title}
               &mdash;

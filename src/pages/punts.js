@@ -23,7 +23,7 @@ const SailNo = styled.span`
 const Boat = ({ boat, imageWanted }) => (
   <Box w={[1 / 2, 1 / 3, 1 / 3, 1 / 5]} p={1}>
     <Card>
-      <SubtleLink to={boat.fields.slug}>
+      <SubtleLink to={`/punts/${boat.fields.slug}`}>
         <Figure>
           <Img sizes={boat.mugshot ? boat.mugshot.sizes : imageWanted.sizes} />
           <FigCaption>
