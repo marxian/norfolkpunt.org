@@ -5,7 +5,6 @@
   "author": "Rupert Redington <rupert@neontribe.co.uk>",
   "dependencies": {
     "babel-plugin-styled-components": "1.6.0",
-    "eslint-plugin-react": "^7.11.1",
     "gatsby": "1.9.277",
     "gatsby-image": "1.0.55",
     "gatsby-link": "1.6.46",
@@ -57,6 +56,7 @@
     "babel-eslint": "9.0.0",
     "eslint": "5.5.0",
     "eslint-config-react": "1.1.7",
+    "eslint-plugin-react": "7.11.1",
     "gh-pages": "1.2.0",
     "husky": "0.14.3",
     "lint-staged": "7.2.2",
