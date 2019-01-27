@@ -114,11 +114,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   })
 }
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === 'build-html') {
-    config.loader('null', {
-      test: /react-image-lightbox/,
-      loader: 'null-loader',
-    })
-  }
-}
+// exports.modifyWebpackConfig = ({ config, stage }) => {
+//   if (stage === 'build-html') {
+//     config.loader('null', {
+//       test: /react-image-lightbox/,
+//       loader: 'null-loader',
+//     })
+//   }
+// }

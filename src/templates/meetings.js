@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { Flex, Box } from 'grid-styled'
 
 export default ({ data }) => {

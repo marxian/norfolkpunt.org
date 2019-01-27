@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { Flex, Box } from 'grid-styled'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
@@ -25,7 +26,7 @@ const Boat = ({ boat, imageWanted }) => (
     <Card>
       <SubtleLink to={`/punts/${boat.fields.slug}`}>
         <Figure>
-          <Img sizes={boat.mugshot ? boat.mugshot.sizes : imageWanted.sizes} />
+          <Img fluid={boat.mugshot ? boat.mugshot.fluid : []} />
           <FigCaption>
             {boat.frontmatter.name} ~{' '}
             <SailNo>{boat.frontmatter.sailNumber}</SailNo>
@@ -66,16 +67,16 @@ export const query = graphql`
             slug
           }
           mugshot {
-            sizes(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
-              ...GatsbyImageSharpSizes_tracedSVG
+            fluid(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
       }
     }
     imageWanted: imageSharp(id: { regex: "/image-wanted/" }) {
-      sizes(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
-        ...GatsbyImageSharpSizes_tracedSVG
+      fluid(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
+        ...GatsbyImageSharpFluid
       }
     }
   }

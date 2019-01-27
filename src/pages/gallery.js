@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Gallery from '../components/Gallery'
 
 export default ({ data }) => <Gallery pictures={data.pictures.edges} />

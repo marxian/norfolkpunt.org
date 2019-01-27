@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { Box } from 'grid-styled'
 import { DateTime } from 'luxon'
 import Card from '../components/Card'
