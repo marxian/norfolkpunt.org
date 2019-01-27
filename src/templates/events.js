@@ -2,15 +2,19 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Flex, Box } from 'grid-styled'
 
+import Layout from '../components/Layout'
+
 export default ({ data }) => {
   const { event } = data
   return (
-    <Flex>
-      <Box>
-        <h1>{event.frontmatter.title}</h1>
-      </Box>
-      <Box dangerouslySetInnerHTML={{ __html: event.html }} />
-    </Flex>
+    <Layout>
+      <Flex>
+        <Box>
+          <h1>{event.frontmatter.title}</h1>
+        </Box>
+        <Box dangerouslySetInnerHTML={{ __html: event.html }} />
+      </Flex>
+    </Layout>
   )
 }
 

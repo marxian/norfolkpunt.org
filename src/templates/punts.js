@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Flex, Box } from 'grid-styled'
 
+import Layout from '../components/Layout'
 import Gallery from '../components/Gallery'
 
 export default ({ data }) => {
@@ -16,7 +17,7 @@ export default ({ data }) => {
   }
 
   return (
-    <Flex>
+    <Layout>
       <Box w={[1, 1 / 2]}>
         <h1>{boat.frontmatter.name}</h1>
         <p>Some text about the boat I guess</p>
@@ -24,7 +25,7 @@ export default ({ data }) => {
       <Box w={[1, 1 / 2]}>
         <Gallery pictures={gallery} />
       </Box>
-    </Flex>
+    </Layout>
   )
 }
 
@@ -35,8 +36,8 @@ export const query = graphql`
         name
       }
       mugshot {
-        sizes(maxWidth: 600, maxHeight: 600, cropFocus: CENTER) {
-          ...GatsbyImageSharpSizes_tracedSVG
+        fluid(maxWidth: 600, maxHeight: 600, cropFocus: CENTER) {
+          ...GatsbyImageSharpFluid
         }
         original {
           src
@@ -48,8 +49,8 @@ export const query = graphql`
       edges {
         picture: node {
           id
-          sizes(maxWidth: 600, maxHeight: 600, cropFocus: CENTER) {
-            ...GatsbyImageSharpSizes_tracedSVG
+          fluid(maxWidth: 600, maxHeight: 600, cropFocus: CENTER) {
+            ...GatsbyImageSharpFluid
           }
           original {
             src

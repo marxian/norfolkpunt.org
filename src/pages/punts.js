@@ -4,6 +4,7 @@ import { Flex, Box } from 'grid-styled'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import Card from '../components/Card'
 import SubtleLink from '../components/SubtleLink'
 
@@ -26,7 +27,7 @@ const Boat = ({ boat, imageWanted }) => (
     <Card>
       <SubtleLink to={`/punts/${boat.fields.slug}`}>
         <Figure>
-          <Img fluid={boat.mugshot ? boat.mugshot.fluid : []} />
+          <Img fluid={boat.mugshot ? boat.mugshot.fluid : imageWanted.fluid} />
           <FigCaption>
             {boat.frontmatter.name} ~{' '}
             <SailNo>{boat.frontmatter.sailNumber}</SailNo>
@@ -38,17 +39,19 @@ const Boat = ({ boat, imageWanted }) => (
 )
 
 export default ({ data }) => (
-  <div>
-    <Flex flexWrap="wrap">
-      {data.boats.edges.map(({ boat }) => (
-        <Boat
-          boat={boat}
-          key={boat.fields.slug}
-          imageWanted={data.imageWanted}
-        />
-      ))}
-    </Flex>
-  </div>
+  <Layout>
+    <div>
+      <Flex flexWrap="wrap">
+        {data.boats.edges.map(({ boat }) => (
+          <Boat
+            boat={boat}
+            key={boat.fields.slug}
+            imageWanted={data.imageWanted.sharp}
+          />
+        ))}
+      </Flex>
+    </div>
+  </Layout>
 )
 
 export const query = graphql`
@@ -74,9 +77,11 @@ export const query = graphql`
         }
       }
     }
-    imageWanted: imageSharp(id: { regex: "/image-wanted/" }) {
-      fluid(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
-        ...GatsbyImageSharpFluid
+    imageWanted: file(relativePath: { regex: "/image-wanted.jpg$/" }) {
+      sharp: childImageSharp {
+        fluid(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }

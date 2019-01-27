@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Flex, Box } from 'grid-styled'
+import { Box } from 'grid-styled'
 import Img from 'gatsby-image'
 import Lightbox from 'react-image-lightbox'
 import styled from 'styled-components'
@@ -22,14 +22,14 @@ class Gallery extends Component {
     const { focusIndex } = this.state
     const { pictures } = this.props
     return (
-      <Flex flexWrap="wrap">
+      <div>
         {pictures.map(({ picture }, i) => (
           <Box w={[1, 1 / 2, 1 / 3, 1 / 5]} key={picture.id}>
             <FocusTrigger
               role="button"
               onClick={() => this.setState({ focusIndex: i })}
             >
-              <Img sizes={picture.sizes} />
+              <Img fluid={picture.fluid} key={picture.id} />
             </FocusTrigger>
           </Box>
         ))}
@@ -57,7 +57,7 @@ class Gallery extends Component {
             onCloseRequest={() => this.setState({ focusIndex: null })}
           />
         )}
-      </Flex>
+      </div>
     )
   }
 }

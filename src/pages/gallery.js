@@ -1,8 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+
+import Layout from '../components/Layout'
 import Gallery from '../components/Gallery'
 
-export default ({ data }) => <Gallery pictures={data.pictures.edges} />
+export default ({ data }) => (
+  <Layout>
+    <Gallery pictures={data.pictures.edges} />
+  </Layout>
+)
 
 export const query = graphql`
   query GalleryPictures {
@@ -13,8 +19,8 @@ export const query = graphql`
       edges {
         picture: node {
           id
-          sizes(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
-            ...GatsbyImageSharpSizes_tracedSVG
+          fluid(maxWidth: 250, maxHeight: 250, cropFocus: CENTER) {
+            ...GatsbyImageSharpFluid
           }
           original {
             src
