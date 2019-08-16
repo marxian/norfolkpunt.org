@@ -17,8 +17,8 @@ const defaultImageFields = {
   interest: 0,
 }
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
+  const { createNodeField } = actions
 
   if (node.internal.type === 'ImageSharp') {
     // Look for an appropriate notes file (<file>.meta.json) and connect it
@@ -78,8 +78,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode, getNodes }) => {
   }
 }
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
   return new Promise((resolve, reject) => {
     graphql(`
       {
