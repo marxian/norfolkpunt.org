@@ -46,15 +46,17 @@ function write(boat) {
   }
 
   var yml = yaml.safeDump(out)
-  fs.writeFile(
-    path.join(__dirname, '..', 'punts', out.slug + '.md'),
-    `---\n${yml}\n---\n`,
-    function(err) {
-      if (err) {
-        return console.error(err)
+  fs.mkdir(path.join(__dirname, '..', 'punts', out.slug), () => {
+    fs.writeFile(
+      path.join(__dirname, '..', 'punts', out.slug, out.slug + '.md'),
+      `---\n${yml}\n---\n`,
+      function(err) {
+        if (err) {
+          return console.error(err)
+        }
       }
-    }
-  )
+    )
+  })
 }
 
 db.each(startQuery, function(err, row) {
