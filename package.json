@@ -4,31 +4,21 @@
   "version": "1.0.0",
   "author": "Rupert Redington <rupert@neontribe.co.uk>",
   "dependencies": {
-    "babel-plugin-styled-components": "1.10.6",
-    "eslint-plugin-react-hooks": "1.7.0",
-    "gatsby": "2.13.66",
-    "gatsby-image": "2.2.8",
-    "gatsby-link": "2.2.5",
-    "gatsby-plugin-react-helmet": "3.1.3",
-    "gatsby-plugin-sharp": "2.2.11",
-    "gatsby-plugin-styled-components": "3.1.2",
-    "gatsby-plugin-typography": "2.3.2",
-    "gatsby-source-filesystem": "2.1.9",
-    "gatsby-transformer-json": "2.2.2",
-    "gatsby-transformer-remark": "2.6.14",
-    "gatsby-transformer-sharp": "2.2.6",
-    "gatsby-transformer-yaml": "2.2.4",
-    "grid-styled": "5.0.2",
-    "js-yaml": "3.13.1",
-    "luxon": "1.17.2",
+    "@mdx-js/loader": "1.4.5",
+    "@next/mdx": "9.0.5",
+    "gatsby-image": "2.2.18",
+    "glob": "7.1.4",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-optipng": "7.0.0",
+    "lqip-loader": "2.2.0",
+    "next": "9.0.5",
+    "next-compose-plugins": "2.2.0",
+    "next-mdx-frontmatter": "0.0.3",
+    "next-optimized-images": "2.5.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-helmet": "5.2.1",
-    "react-image-lightbox": "5.1.0",
-    "slugify": "1.3.4",
-    "styled-components": "4.3.2",
-    "typeface-vollkorn": "0.0.72",
-    "typography-theme-lawton": "0.16.19"
+    "responsive-loader": "1.2.0",
+    "sharp": "0.23.0"
   },
   "keywords": [
     "Norfolk Punt"
@@ -45,9 +35,11 @@
     ]
   },
   "scripts": {
-    "start": "gatsby serve",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "data": "node ./extract.js && node ./buildIndex.js",
+    "dev": "next",
+    "prebuild": "yarn data",
+    "build": "next build",
+    "start": "next start",
     "format": "prettier --write '{*/**,.}/*.{js,json}'",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -59,9 +51,12 @@
     "eslint-plugin-flowtype": "4.2.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react-hooks": "2.0.1",
     "husky": "3.0.3",
+    "js-yaml": "3.13.1",
     "lint-staged": "9.2.1",
-    "prettier": "1.18.2"
+    "prettier": "1.18.2",
+    "sqlite3": "4.1.0"
   },
   "husky": {
     "hooks": {
