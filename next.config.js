@@ -11,7 +11,7 @@ module.exports = withPlugins([
   [
     optimizedImages,
     {
-      optimizeImagesInDev: true,
+      optimizeImagesInDev: false,
       responsive: {
         adapter: require('responsive-loader/sharp'),
       },

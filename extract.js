@@ -49,7 +49,7 @@ function write(boat) {
   fs.mkdir(path.join(__dirname, 'pages', 'boats', out.slug), () => {
     fs.writeFile(
       path.join(__dirname, 'pages', 'boats', out.slug, 'index.mdx'),
-      `---\n${yml}\n---\n\n<h1>{name}</h1>`,
+      `---\n${yml}\n---\n\n<PuntDetails name={name} sailNumber={sailNumber} />`,
       function(err) {
         if (err) {
           return console.error(err)

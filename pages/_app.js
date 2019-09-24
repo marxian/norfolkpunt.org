@@ -3,11 +3,20 @@ import App from 'next/app'
 
 import { MDXProvider } from '@mdx-js/react'
 import Image from '../components/Image'
+import Nav from '../components/Nav'
+import PuntDetails from '../components/PuntDetails'
 
 import '../styles/index.css'
 
 const components = {
   Image,
+  PuntDetails,
+  wrapper: props => (
+    <>
+      <Nav />
+      <main>{props.children}</main>
+    </>
+  ),
 }
 
 class MyApp extends App {

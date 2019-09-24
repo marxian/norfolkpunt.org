@@ -23,6 +23,10 @@ module.exports = {
     lqip: require('./pages/boats/decoy-40/decoy-40.jpg?lqip'),
     fluid: require('./pages/boats/decoy-40/decoy-40.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
   },
+  './pages/boats/defaultCover.jpg': {
+    lqip: require('./pages/boats/defaultCover.jpg?lqip'),
+    fluid: require('./pages/boats/defaultCover.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
+  },
   './pages/boats/firefly-59/firefly-59.jpg': {
     lqip: require('./pages/boats/firefly-59/firefly-59.jpg?lqip'),
     fluid: require('./pages/boats/firefly-59/firefly-59.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),

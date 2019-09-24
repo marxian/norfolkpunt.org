@@ -1,0 +1,13 @@
+import punts from '../../punts.json'
+import PuntCard from '../../components/PuntCard'
+//sort punts by number descending
+let boats = Object.values(punts).sort((a, b) => b.sailNumber - a.sailNumber)
+
+
+# Boats
+
+<article>
+  <div className="cf w-100 pa2-ns">
+    {boats.map(boat => <PuntCard key={boat.slug} punt={boat} />)}
+  </div>
+</article>

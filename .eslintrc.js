@@ -1,14 +1,16 @@
 /* eslint-env node */
 module.exports = {
   extends: ['react-app'],
-  // rules: {
-  //   semi: 0,
-  //   'comma-dangle': ['error', 'always-multiline'],
-  //   indent: ['error', 2],
-  //   'react/prop-types': 0,
-  //   'prefer-reflect': 0,
-  //   'space-before-function-paren': 0,
-  // },
+  rules: {
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
+  },
   globals: {
     graphql: false,
   },
