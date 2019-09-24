@@ -6,7 +6,7 @@ const fluid = '?resize&sizes[]=200&sizes[]=600&sizes[]=1000'
 const lqip = '?lqip'
 
 async function indexPunts() {
-  const puntDirs = glob.sync('./pages/punts/*/')
+  const puntDirs = glob.sync('./pages/boats/*/')
   const puntList = await Promise.all(
     puntDirs.map(async base => {
       let mdx = await fsPromises.readFile(base + '/index.mdx', 'utf-8')

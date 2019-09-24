@@ -81,7 +81,7 @@
     "yearBuilt": 1980,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/barnacle-goose-70/barnacle-goose-70.jpg"
+    "coverImage": "./pages/boats/barnacle-goose-70/barnacle-goose-70.jpg"
   },
   "bittern-3": {
     "name": "Bittern",
@@ -167,7 +167,7 @@
     "yearBuilt": 1989,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/blackbird-74/blackbird-74.jpg"
+    "coverImage": "./pages/boats/blackbird-74/blackbird-74.jpg"
   },
   "blue-dar-34": {
     "name": "Blue Dar",
@@ -293,7 +293,7 @@
     "yearBuilt": 1933,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/cavender-32/cavender-32.jpg"
+    "coverImage": "./pages/boats/cavender-32/cavender-32.jpg"
   },
   "comet-102": {
     "name": "Comet",
@@ -320,7 +320,7 @@
     "yearBuilt": 2008,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/comet-102/comet-102.jpg"
+    "coverImage": "./pages/boats/comet-102/comet-102.jpg"
   },
   "cormorant-88": {
     "name": "Cormorant",
@@ -362,7 +362,7 @@
     "yearBuilt": 1993,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/cormorant-88/cormorant-88.jpg"
+    "coverImage": "./pages/boats/cormorant-88/cormorant-88.jpg"
   },
   "cuckoo-91": {
     "name": "Cuckoo",
@@ -591,7 +591,7 @@
     "yearBuilt": 1937,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/decoy-40/decoy-40.jpg"
+    "coverImage": "./pages/boats/decoy-40/decoy-40.jpg"
   },
   "didler-41": {
     "name": "Didler",
@@ -906,7 +906,7 @@
     "previousNames": "Flounder (1972 - 1987)",
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/firefly-59/firefly-59.jpg"
+    "coverImage": "./pages/boats/firefly-59/firefly-59.jpg"
   },
   "flamingo-92": {
     "name": "Flamingo",
@@ -943,7 +943,7 @@
     "yearBuilt": 1999,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/flamingo-92/flamingo-92.jpg"
+    "coverImage": "./pages/boats/flamingo-92/flamingo-92.jpg"
   },
   "flight-21": {
     "name": "Flight",
@@ -1062,7 +1062,7 @@
     "yearBuilt": 1936,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/gamecock-37/gamecock-37.jpg"
+    "coverImage": "./pages/boats/gamecock-37/gamecock-37.jpg"
   },
   "garganey-64": {
     "name": "Garganey",
@@ -1178,7 +1178,7 @@
     "previousNames": "Scoter",
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/goldeneye-25/goldeneye-25.jpg"
+    "coverImage": "./pages/boats/goldeneye-25/goldeneye-25.jpg"
   },
   "goosander-89": {
     "name": "Goosander",
@@ -1220,7 +1220,7 @@
     "yearBuilt": 1994,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/goosander-89/goosander-89.jpg"
+    "coverImage": "./pages/boats/goosander-89/goosander-89.jpg"
   },
   "grayling-81": {
     "name": "Grayling",
@@ -1257,7 +1257,7 @@
     "yearBuilt": 1991,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/grayling-81/grayling-81.jpg"
+    "coverImage": "./pages/boats/grayling-81/grayling-81.jpg"
   },
   "great-white-97": {
     "name": "Great White",
@@ -1299,7 +1299,7 @@
     "yearBuilt": 2003,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/great-white-97/great-white-97.jpg"
+    "coverImage": "./pages/boats/great-white-97/great-white-97.jpg"
   },
   "grebe-66": {
     "name": "Grebe",
@@ -1366,7 +1366,7 @@
     "yearBuilt": 1978,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/grebe-66/grebe-66.jpg"
+    "coverImage": "./pages/boats/grebe-66/grebe-66.jpg"
   },
   "greylag-50": {
     "name": "Greylag",
@@ -1434,7 +1434,7 @@
     "previousNames": "Flamer (1958 - 1967)",
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/greylag-50/greylag-50.jpg"
+    "coverImage": "./pages/boats/greylag-50/greylag-50.jpg"
   },
   "harnser-51": {
     "name": "Harnser",
@@ -1486,7 +1486,7 @@
     "yearBuilt": 1961,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/harnser-51/harnser-51.jpg"
+    "coverImage": "./pages/boats/harnser-51/harnser-51.jpg"
   },
   "heron-24": {
     "name": "Heron",
@@ -1688,7 +1688,7 @@
     "yearBuilt": 1990,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/hushwing-79/hushwing-79.jpg"
+    "coverImage": "./pages/boats/hushwing-79/hushwing-79.jpg"
   },
   "jackdaw-100": {
     "name": "Jackdaw",
@@ -1861,7 +1861,7 @@
     "yearBuilt": 1939,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/kipper-44/kipper-44.jpg"
+    "coverImage": "./pages/boats/kipper-44/kipper-44.jpg"
   },
   "kookaburra-76": {
     "name": "Kookaburra",
@@ -2194,7 +2194,7 @@
     "yearBuilt": 1978,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/marsh-harrier-69/marsh-harrier-69.jpg"
+    "coverImage": "./pages/boats/marsh-harrier-69/marsh-harrier-69.jpg"
   },
   "martin-46": {
     "name": "Martin",
@@ -2427,7 +2427,7 @@
     "yearBuilt": 1993,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/peregrine-86/peregrine-86.jpg"
+    "coverImage": "./pages/boats/peregrine-86/peregrine-86.jpg"
   },
   "pintail-14": {
     "name": "Pintail",
@@ -2596,7 +2596,7 @@
     "yearBuilt": 1918,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/prawn-19/prawn-19.jpg"
+    "coverImage": "./pages/boats/prawn-19/prawn-19.jpg"
   },
   "puffin-56": {
     "name": "Puffin",
@@ -2675,7 +2675,7 @@
     "yearBuilt": 1989,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/rainbow-trout-75/rainbow-trout-75.jpg"
+    "coverImage": "./pages/boats/rainbow-trout-75/rainbow-trout-75.jpg"
   },
   "razorbill-73": {
     "name": "Razorbill",
@@ -2755,7 +2755,7 @@
     "yearBuilt": 2004,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/redwing-98/redwing-98.jpg"
+    "coverImage": "./pages/boats/redwing-98/redwing-98.jpg"
   },
   "reed-bunting-65": {
     "name": "Reed Bunting",
@@ -2892,7 +2892,7 @@
     "yearBuilt": 1989,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/rhode-island-red-77/rhode-island-red-77.jpg"
+    "coverImage": "./pages/boats/rhode-island-red-77/rhode-island-red-77.jpg"
   },
   "rosybill-36": {
     "name": "Rosybill",
@@ -2970,7 +2970,7 @@
     "previousNames": "Ariel (1947-8) Woodpecker(1948-9)",
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/rosybill-36/rosybill-36.jpg"
+    "coverImage": "./pages/boats/rosybill-36/rosybill-36.jpg"
   },
   "rushlight-27": {
     "name": "Rushlight",
@@ -3470,7 +3470,7 @@
     "yearBuilt": 1975,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/shoveller-61/shoveller-61.jpg"
+    "coverImage": "./pages/boats/shoveller-61/shoveller-61.jpg"
   },
   "shrimp-1": {
     "name": "Shrimp",
@@ -3699,7 +3699,7 @@
     "previousNames": "Teal (1978 - 1994)",
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/snark-49/snark-49.jpg"
+    "coverImage": "./pages/boats/snark-49/snark-49.jpg"
   },
   "snipe-16": {
     "name": "Snipe",
@@ -3801,7 +3801,7 @@
     "yearBuilt": 2003,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/snow-goose-96/snow-goose-96.jpg"
+    "coverImage": "./pages/boats/snow-goose-96/snow-goose-96.jpg"
   },
   "sparkle-23": {
     "name": "Sparkle",
@@ -4043,7 +4043,7 @@
     "yearBuilt": 1936,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/swallow-ii-35/swallow-ii-35.jpg"
+    "coverImage": "./pages/boats/swallow-ii-35/swallow-ii-35.jpg"
   },
   "swallowtail-67": {
     "name": "Swallowtail",
@@ -4255,7 +4255,7 @@
     "yearBuilt": 1963,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/tern-54/tern-54.jpg"
+    "coverImage": "./pages/boats/tern-54/tern-54.jpg"
   },
   "trout-8": {
     "name": "Trout",
@@ -4341,7 +4341,7 @@
     "yearBuilt": 2002,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/white-eagle-95/white-eagle-95.jpg"
+    "coverImage": "./pages/boats/white-eagle-95/white-eagle-95.jpg"
   },
   "whooper-94": {
     "name": "Whooper",
@@ -4507,7 +4507,7 @@
     "yearBuilt": 1961,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/wild-duck-52/wild-duck-52.jpg"
+    "coverImage": "./pages/boats/wild-duck-52/wild-duck-52.jpg"
   },
   "wild-goose-53": {
     "name": "Wild Goose",
@@ -4549,7 +4549,7 @@
     "yearBuilt": 1962,
     "category": "punts",
     "images": [],
-    "coverImage": "./pages/punts/wild-goose-53/wild-goose-53.jpg"
+    "coverImage": "./pages/boats/wild-goose-53/wild-goose-53.jpg"
   },
   "wild-goose-ii-103": {
     "name": "Wild Goose II",

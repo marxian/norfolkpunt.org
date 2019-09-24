@@ -46,9 +46,9 @@ function write(boat) {
   }
 
   var yml = yaml.safeDump(out)
-  fs.mkdir(path.join(__dirname, 'pages', 'punts', out.slug), () => {
+  fs.mkdir(path.join(__dirname, 'pages', 'boats', out.slug), () => {
     fs.writeFile(
-      path.join(__dirname, 'pages', 'punts', out.slug, 'index.mdx'),
+      path.join(__dirname, 'pages', 'boats', out.slug, 'index.mdx'),
       `---\n${yml}\n---\n\n<h1>{name}</h1>`,
       function(err) {
         if (err) {

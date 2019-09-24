@@ -4,6 +4,8 @@ import App from 'next/app'
 import { MDXProvider } from '@mdx-js/react'
 import Image from '../components/Image'
 
+import '../styles/index.css'
+
 const components = {
   Image,
 }
