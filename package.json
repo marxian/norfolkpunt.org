@@ -7,6 +7,7 @@
     "@mdx-js/loader": "1.5.0",
     "@next/mdx": "9.0.6",
     "@zeit/next-css": "1.0.1",
+    "gatsby-background-image": "0.8.12",
     "gatsby-image": "2.2.20",
     "glob": "7.1.4",
     "imagemin-mozjpeg": "8.0.0",
@@ -14,13 +15,15 @@
     "lqip-loader": "2.2.0",
     "next": "9.0.6",
     "next-compose-plugins": "2.2.0",
+    "next-fonts": "0.18.0",
     "next-mdx-frontmatter": "0.0.3",
     "next-optimized-images": "2.5.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "responsive-loader": "1.2.0",
     "sharp": "0.23.0",
-    "tachyons": "4.11.1"
+    "tachyons": "4.11.1",
+    "typeface-vollkorn": "0.0.72"
   },
   "keywords": [
     "Norfolk Punt"
