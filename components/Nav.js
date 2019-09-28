@@ -2,15 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 
 export default () => (
-  <nav className="bg-black-90 db dt-l w-100 border-box pa3">
+  <nav className="bg-black-90 w-100 pv1 ph3">
     <Link href="/">
-      <a
-        className="db dtc-l v-mid mid-gray link dim w-100 w-50-ns tc tl-l mb2 mb0-l"
-        title="Home"
-      >
+      <a className="link dim tc" title="Home">
         <h1>
-          <span className="f2 white">Norfolk Punt</span>&nbsp;
-          <span className="f3 moon-gray">Owners Association</span>
+          <span className="f2 white">Norfolk&nbsp;Punt</span>{' '}
+          <span className="f3 moon-gray">Owners&nbsp;Association</span>
         </h1>
       </a>
     </Link>
