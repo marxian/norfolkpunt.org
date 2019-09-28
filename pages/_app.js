@@ -20,7 +20,7 @@ const components = {
         <title>{`Norfolk Punt Owners Association`}</title>
         <meta
           name="Description"
-          content="The Norfolk Punt is a performance racing dinght with a long and fascinating history."
+          content="The Norfolk Punt is a performance racing dinghy with a long and fascinating history."
         />
       </Head>
       <Nav />
