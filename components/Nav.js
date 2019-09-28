@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 
 export default () => (
-  <nav class="bg-black-90 db dt-l w-100 border-box pa3 ph5-l">
+  <nav className="bg-black-90 db dt-l w-100 border-box pa3">
     <Link href="/">
       <a
-        class="db dtc-l v-mid mid-gray link dim w-100 w-50-ns tc tl-l mb2 mb0-l"
+        className="db dtc-l v-mid mid-gray link dim w-100 w-50-ns tc tl-l mb2 mb0-l"
         title="Home"
       >
         <h1>
@@ -14,7 +14,7 @@ export default () => (
         </h1>
       </a>
     </Link>
-    <div class="db dtc-l v-mid w-100 w-50-ns tc tr-l">
+    {/* <div className="db dtc-l v-mid w-100 w-50-ns tc tr-l">
       <Link href="/boats">
         <a className="link dim white dib f4 f3-l dib mr3 mr4-l">Boats</a>
       </Link>
@@ -24,6 +24,6 @@ export default () => (
       <Link href="/contact">
         <a className="link dim white dib f4 f3-l dib mr3 mr4-l">Contact</a>
       </Link>
-    </div>
+    </div> */}
   </nav>
 )
