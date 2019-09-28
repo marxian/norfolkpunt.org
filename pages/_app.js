@@ -6,6 +6,7 @@ import Image from '../components/Image'
 import BackgroundImage from '../components/BackgroundImage'
 import Nav from '../components/Nav'
 import PuntDetails from '../components/PuntDetails'
+import Head from 'next/head'
 
 import '../styles/index.css'
 
@@ -15,6 +16,13 @@ const components = {
   PuntDetails,
   wrapper: props => (
     <>
+      <Head>
+        <title>{`Norfolk Punt Owners Association`}</title>
+        <meta
+          name="Description"
+          value="The Norfolk Punt is a performance racing dinght with a long and fascinating history."
+        />
+      </Head>
       <Nav />
       <main>{props.children}</main>
     </>
