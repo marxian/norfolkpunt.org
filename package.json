@@ -7,7 +7,7 @@
     "@mdx-js/loader": "1.5.0",
     "@next/mdx": "9.0.7",
     "@zeit/next-css": "1.0.1",
-    "gatsby-background-image": "0.8.14",
+    "gatsby-background-image": "0.8.15",
     "gatsby-image": "2.2.23",
     "glob": "7.1.4",
     "imagemin-mozjpeg": "8.0.0",
