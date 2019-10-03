@@ -1,0 +1,25 @@
+{
+  "name": "Snow Goose",
+  "loa": 22,
+  "handicap": 908,
+  "slug": "snow-goose-96",
+  "builder": "Jeff Green",
+  "construction": "Carbon Foam Sandwich (Wooden Decks)",
+  "design": "Hardchine",
+  "designer": "Wyche and Coppock",
+  "owners": [
+    {
+      "from": 2003,
+      "to": null,
+      "owner": "John Parker"
+    },
+    {
+      "from": 2003,
+      "to": null,
+      "owner": "Jane Pye"
+    }
+  ],
+  "sailNumber": 96,
+  "yearBuilt": 2003,
+  "category": "punts"
+}

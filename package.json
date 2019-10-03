@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "author": "Rupert Redington <rupert@neontribe.co.uk>",
   "dependencies": {
-    "@mdx-js/loader": "1.5.0",
-    "@next/mdx": "9.0.7",
     "@zeit/next-css": "1.0.1",
     "gatsby-background-image": "0.8.15",
     "gatsby-image": "2.2.23",
@@ -16,7 +14,6 @@
     "next": "9.0.7",
     "next-compose-plugins": "2.2.0",
     "next-fonts": "0.19.0",
-    "next-mdx-frontmatter": "0.0.3",
     "next-optimized-images": "2.5.3",
     "react": "16.10.1",
     "react-dom": "16.10.1",
@@ -58,7 +55,6 @@
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react-hooks": "2.1.1",
     "husky": "3.0.8",
-    "js-yaml": "3.13.1",
     "lint-staged": "9.4.1",
     "prettier": "1.18.2",
     "sqlite3": "4.1.0"

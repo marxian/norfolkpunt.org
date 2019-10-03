@@ -3,7 +3,6 @@ var sqlite3 = require('sqlite3').verbose()
 var db = new sqlite3.Database('./sqlite.db')
 var fs = require('fs')
 var path = require('path')
-var yaml = require('js-yaml')
 
 var startQuery = [
   'SELECT localboats_boat.name as name, loa, year_built, handicap, sail_number, slug, previous_names,',
@@ -44,12 +43,19 @@ function write(boat) {
   if (!out.previousNames) {
     delete out.previousNames
   }
-
-  var yml = yaml.safeDump(out)
   fs.mkdir(path.join(__dirname, 'pages', 'boats', out.slug), () => {
-    fs.writeFile(
-      path.join(__dirname, 'pages', 'boats', out.slug, 'index.mdx'),
-      `---\n${yml}\n---\n\n<PuntDetails name={name} sailNumber={sailNumber} />`,
+    fs.writeFileSync(
+      path.join(__dirname, 'pages', 'boats', out.slug, 'details.json'),
+      JSON.stringify(out, null, '\t'),
+      function(err) {
+        if (err) {
+          return console.error(err)
+        }
+      }
+    )
+    fs.writeFileSync(
+      path.join(__dirname, 'pages', 'boats', out.slug, 'index.js'),
+      `import React from 'react'\nimport PuntDetails from '../../../components/PuntDetails'\n\nimport punt from './details.json'\n\nexport default () => (<PuntDetails name={punt.name} sailNumber={punt.sailNumber} />)`,
       function(err) {
         if (err) {
           return console.error(err)

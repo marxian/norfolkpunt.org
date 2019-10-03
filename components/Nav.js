@@ -14,12 +14,13 @@ export default () => (
       </Link>
     </div>
     <div className="w-100 w-50-l tc tr-l mv4-l f4 b">
-      {/* <Link href="/boats">
-        <a className="link dim white ph1">Boats</a>
-      </Link>
+      {/*
       <Link href="/gallery">
         <a className="link dim white ph1">Gallery</a>
       </Link> */}
+      <Link href="/boats">
+        <a className="link dim white ph1">Boats</a>
+      </Link>
       <Link href="/technicalities">
         <a className="link dim white underline-hover ph1">Technicalities</a>
       </Link>
