@@ -1720,7 +1720,7 @@
     "yearBuilt": 2004,
     "category": "punts",
     "images": [],
-    "coverImage": null
+    "coverImage": "./pages/boats/jackdaw-100/jackdaw-100.jpg"
   },
   "jenny-spinner-2": {
     "name": "Jenny Spinner",
@@ -1903,7 +1903,7 @@
     "yearBuilt": 1989,
     "category": "punts",
     "images": [],
-    "coverImage": null
+    "coverImage": "./pages/boats/kookaburra-76/kookaburra-76.jpg"
   },
   "lady-pamela-42": {
     "name": "Lady Pamela",
@@ -2330,7 +2330,7 @@
     "yearBuilt": 1991,
     "category": "punts",
     "images": [],
-    "coverImage": null
+    "coverImage": "./pages/boats/merlin-82/merlin-82.jpg"
   },
   "mickey-31": {
     "name": "Mickey",
@@ -3077,7 +3077,7 @@
     "yearBuilt": 1930,
     "category": "punts",
     "images": [],
-    "coverImage": null
+    "coverImage": "./pages/boats/rushlight-27/rushlight-27.jpg"
   },
   "saker-90": {
     "name": "Saker",
@@ -4373,7 +4373,7 @@
     "yearBuilt": 2000,
     "category": "punts",
     "images": [],
-    "coverImage": null
+    "coverImage": "./pages/boats/whooper-94/whooper-94.jpg"
   },
   "widgeon-39": {
     "name": "Widgeon",
@@ -4571,7 +4571,7 @@
     "yearBuilt": 2016,
     "category": "punts",
     "images": [],
-    "coverImage": null
+    "coverImage": "./pages/boats/wild-goose-ii-103/wild-goose-ii-103.jpg"
   },
   "winkle-18": {
     "name": "Winkle",
@@ -4636,6 +4636,6 @@
     "yearBuilt": 2004,
     "category": "punts",
     "images": [],
-    "coverImage": null
+    "coverImage": "./pages/boats/woodpecker-99/woodpecker-99.jpg"
   }
 }

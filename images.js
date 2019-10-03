@@ -71,13 +71,25 @@ module.exports = {
     lqip: require('./pages/boats/hushwing-79/hushwing-79.jpg?lqip'),
     fluid: require('./pages/boats/hushwing-79/hushwing-79.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
   },
+  './pages/boats/jackdaw-100/jackdaw-100.jpg': {
+    lqip: require('./pages/boats/jackdaw-100/jackdaw-100.jpg?lqip'),
+    fluid: require('./pages/boats/jackdaw-100/jackdaw-100.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
+  },
   './pages/boats/kipper-44/kipper-44.jpg': {
     lqip: require('./pages/boats/kipper-44/kipper-44.jpg?lqip'),
     fluid: require('./pages/boats/kipper-44/kipper-44.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
   },
+  './pages/boats/kookaburra-76/kookaburra-76.jpg': {
+    lqip: require('./pages/boats/kookaburra-76/kookaburra-76.jpg?lqip'),
+    fluid: require('./pages/boats/kookaburra-76/kookaburra-76.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
+  },
   './pages/boats/marsh-harrier-69/marsh-harrier-69.jpg': {
     lqip: require('./pages/boats/marsh-harrier-69/marsh-harrier-69.jpg?lqip'),
     fluid: require('./pages/boats/marsh-harrier-69/marsh-harrier-69.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
+  },
+  './pages/boats/merlin-82/merlin-82.jpg': {
+    lqip: require('./pages/boats/merlin-82/merlin-82.jpg?lqip'),
+    fluid: require('./pages/boats/merlin-82/merlin-82.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
   },
   './pages/boats/peregrine-86/peregrine-86.jpg': {
     lqip: require('./pages/boats/peregrine-86/peregrine-86.jpg?lqip'),
@@ -103,6 +115,10 @@ module.exports = {
     lqip: require('./pages/boats/rosybill-36/rosybill-36.jpg?lqip'),
     fluid: require('./pages/boats/rosybill-36/rosybill-36.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
   },
+  './pages/boats/rushlight-27/rushlight-27.jpg': {
+    lqip: require('./pages/boats/rushlight-27/rushlight-27.jpg?lqip'),
+    fluid: require('./pages/boats/rushlight-27/rushlight-27.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
+  },
   './pages/boats/shoveller-61/shoveller-61.jpg': {
     lqip: require('./pages/boats/shoveller-61/shoveller-61.jpg?lqip'),
     fluid: require('./pages/boats/shoveller-61/shoveller-61.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
@@ -127,6 +143,10 @@ module.exports = {
     lqip: require('./pages/boats/white-eagle-95/white-eagle-95.jpg?lqip'),
     fluid: require('./pages/boats/white-eagle-95/white-eagle-95.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
   },
+  './pages/boats/whooper-94/whooper-94.jpg': {
+    lqip: require('./pages/boats/whooper-94/whooper-94.jpg?lqip'),
+    fluid: require('./pages/boats/whooper-94/whooper-94.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
+  },
   './pages/boats/wild-duck-52/wild-duck-52.jpg': {
     lqip: require('./pages/boats/wild-duck-52/wild-duck-52.jpg?lqip'),
     fluid: require('./pages/boats/wild-duck-52/wild-duck-52.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
@@ -134,5 +154,13 @@ module.exports = {
   './pages/boats/wild-goose-53/wild-goose-53.jpg': {
     lqip: require('./pages/boats/wild-goose-53/wild-goose-53.jpg?lqip'),
     fluid: require('./pages/boats/wild-goose-53/wild-goose-53.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
+  },
+  './pages/boats/wild-goose-ii-103/wild-goose-ii-103.jpg': {
+    lqip: require('./pages/boats/wild-goose-ii-103/wild-goose-ii-103.jpg?lqip'),
+    fluid: require('./pages/boats/wild-goose-ii-103/wild-goose-ii-103.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
+  },
+  './pages/boats/woodpecker-99/woodpecker-99.jpg': {
+    lqip: require('./pages/boats/woodpecker-99/woodpecker-99.jpg?lqip'),
+    fluid: require('./pages/boats/woodpecker-99/woodpecker-99.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
   },
 }

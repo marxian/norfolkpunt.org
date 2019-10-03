@@ -8,12 +8,14 @@ export default () => {
   let boats = Object.values(punts).sort((a, b) => b.sailNumber - a.sailNumber)
 
   return (
-    <article>
-      <div className="cf w-100 pa2-ns">
-        {boats.map(boat => (
-          <PuntCard key={boat.slug} punt={boat} />
-        ))}
-      </div>
-    </article>
+    <div className="cf ma2-l">
+      {boats.map(boat => (
+        <PuntCard
+          className="fl w-100 w-third-m w-25-l pa2"
+          key={boat.slug}
+          punt={boat}
+        />
+      ))}
+    </div>
   )
 }
