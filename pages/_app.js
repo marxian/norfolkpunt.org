@@ -6,6 +6,7 @@ import Image from '../components/Image'
 import BackgroundImage from '../components/BackgroundImage'
 import Nav from '../components/Nav'
 import PuntDetails from '../components/PuntDetails'
+import Footer from '../components/Footer'
 import Head from 'next/head'
 
 import '../styles/index.css'
@@ -25,6 +26,7 @@ const components = {
       </Head>
       <Nav />
       <main>{props.children}</main>
+      <Footer />
     </>
   ),
 }
