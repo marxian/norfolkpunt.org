@@ -46,7 +46,7 @@ function write(boat) {
   fs.mkdir(path.join(__dirname, 'pages', 'boats', out.slug), () => {
     fs.writeFileSync(
       path.join(__dirname, 'pages', 'boats', out.slug, 'details.json'),
-      JSON.stringify(out, null, '\t'),
+      JSON.stringify(out, null, '  ') + '\n',
       function(err) {
         if (err) {
           return console.error(err)
@@ -55,7 +55,7 @@ function write(boat) {
     )
     fs.writeFileSync(
       path.join(__dirname, 'pages', 'boats', out.slug, 'index.js'),
-      `import React from 'react'\nimport PuntDetails from '../../../components/PuntDetails'\n\nimport punt from './details.json'\n\nexport default () => (<PuntDetails name={punt.name} sailNumber={punt.sailNumber} />)`,
+      `import React from 'react'\nimport PuntDetails from '../../../components/PuntDetails'\n\nimport punt from './details.json'\n\nexport default () => (\n  <PuntDetails name={punt.name} sailNumber={punt.sailNumber} />\n)\n`,
       function(err) {
         if (err) {
           return console.error(err)

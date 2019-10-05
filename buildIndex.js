@@ -5,16 +5,6 @@ const sizeOf = require('image-size')
 const fluid = '?resize&sizes[]=200&sizes[]=600&sizes[]=1000'
 const lqip = '?lqip'
 
-function shuffle(list) {
-  for (let i = list.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * i)
-    const temp = list[i]
-    list[i] = list[j]
-    list[j] = temp
-  }
-  return list
-}
-
 async function indexPunts() {
   const puntDirs = glob.sync('./pages/boats/*/')
   const puntList = await Promise.all(
@@ -38,7 +28,7 @@ async function indexPunts() {
   puntList.forEach(p => (punts[p.slug] = p))
   await fsPromises.writeFile('./punts.json', JSON.stringify(punts, null, '\t'))
 
-  const imageList = shuffle(glob.sync('./pages/**/*.{jpg,png}'))
+  const imageList = glob.sync('./pages/**/*.{jpg,png}')
   const imageData = `module.exports = {\n${imageList
     .map(img => {
       let { width, height } = sizeOf(img)
@@ -50,7 +40,7 @@ async function indexPunts() {
 }
 
 async function buildPictures() {
-  const imageList = shuffle(glob.sync('./pages/pictures/*.{jpg,png}'))
+  const imageList = glob.sync('./pages/pictures/*.{jpg,png}')
   const imageData = `module.exports = {\n${imageList
     .map(
       img =>
