@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import images from '../images'
 import Image from './Image'
+import BackgroundImage from './BackgroundImage'
 
 export default ({ punt, className }) => (
   <div className={`${className} bg-black-90 white tc grow`}>
@@ -17,8 +18,8 @@ export default ({ punt, className }) => (
     ) : (
       <Image
         data={{
-          ...images['./pages/boats/defaultCover.jpg'],
-          aspectRatio: 1,
+          lqip: require('../images/photograph-wanted.png?lqip'),
+          fluid: require('../images/photograph-wanted.png?resize&sizes[]=200&sizes[]=600&sizes[]=1000&sizes=2000'),
         }}
       />
     )}
