@@ -10,11 +10,9 @@ export default () => {
   return (
     <div className="cf ma2-l">
       {boats.map(boat => (
-        <PuntCard
-          className="fl w-100 w-third-m w-25-l pa2"
-          key={boat.slug}
-          punt={boat}
-        />
+        <div className="fl w-100 w-third-m w-25-l pa2" key={boat.slug}>
+          <PuntCard punt={boat} />
+        </div>
       ))}
     </div>
   )
