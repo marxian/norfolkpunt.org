@@ -8,9 +8,19 @@ export default ({ punt, className }) => (
     {/* <Link href={`/boats/${punt.slug}`}>
       <a className="db link dim tc"> */}
     {punt.coverImage ? (
-      <Image data={images[punt.coverImage]} />
+      <Image
+        data={{
+          ...images[punt.coverImage],
+          aspectRatio: 1,
+        }}
+      />
     ) : (
-      <Image data={images['./pages/boats/defaultCover.jpg']} />
+      <Image
+        data={{
+          ...images['./pages/boats/defaultCover.jpg'],
+          aspectRatio: 1,
+        }}
+      />
     )}
     <span className="db f4 b pv1">{punt.name}</span>
     <span className="db f5 gray b">{punt.sailNumber}</span>
