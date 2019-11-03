@@ -1,6 +1,7 @@
 const glob = require('glob')
 const fsPromises = require('fs').promises
 const sizeOf = require('image-size')
+const papa = require('papaparse')
 
 const fluid = '?resize&sizes[]=200&sizes[]=600&sizes[]=1000'
 const lqip = '?lqip'
@@ -27,6 +28,21 @@ async function indexPunts() {
   const punts = {}
   puntList.forEach(p => (punts[p.slug] = p))
   await fsPromises.writeFile('./punts.json', JSON.stringify(punts, null, '\t'))
+
+  const register = Object.values(punts)
+    .sort((a, b) => b.sailNumber - a.sailNumber)
+    .filter(p => !p.lost)
+    .map(p => ({
+      'Sail Number': p.sailNumber,
+      Name: p.name,
+      Owner: p.owners[0].owner,
+      Handicap: p.handicap,
+      Length: p.loa + 'ft',
+    }))
+  await fsPromises.writeFile(
+    './static/norfolk-punt-register.csv',
+    papa.unparse(register)
+  )
 
   const imageList = glob.sync('./pages/**/*.{jpg,png}')
   const imageData = `module.exports = {\n${imageList

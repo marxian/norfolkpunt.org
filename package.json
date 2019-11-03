@@ -39,7 +39,7 @@
     ]
   },
   "scripts": {
-    "data": "node ./extract.js && node ./buildIndex.js",
+    "data": "node ./buildIndex.js",
     "dev": "next",
     "prebuild": "yarn data",
     "build": "next build",
@@ -59,8 +59,8 @@
     "eslint-plugin-react-hooks": "2.2.0",
     "husky": "3.0.9",
     "lint-staged": "9.4.2",
-    "prettier": "1.18.2",
-    "sqlite3": "4.1.0"
+    "papaparse": "5.1.0",
+    "prettier": "1.18.2"
   },
   "husky": {
     "hooks": {

@@ -28,6 +28,20 @@ export default () => (
       </div>
     </article>
     <article className="bt bb b--black-10">
+      <h2>Class Register</h2>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            className="link black underline-hover"
+            href="/static/norfolk-punt-register.csv"
+          >
+            Norfolk Punt Class Register
+          </a>
+        </li>
+      </ul>
+    </article>
+    <article className="bt bb b--black-10">
       <h2>Class Rules</h2>
       <ul>
         <li>
