@@ -9,6 +9,11 @@
   "designer": "Wyche and Coppock",
   "owners": [
     {
+      "from": 2001,
+      "to": null,
+      "owner": "David Baulcombe"
+    },
+    {
       "from": 2004,
       "to": null,
       "owner": "R Conway"
@@ -22,11 +27,6 @@
       "from": 2001,
       "to": 2004,
       "owner": "Kim Whittaker"
-    },
-    {
-      "from": 2001,
-      "to": null,
-      "owner": "David Baulcombe"
     },
     {
       "from": 1999,
