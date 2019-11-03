@@ -9,20 +9,20 @@ export default () => (
           <dt className="b">Chair</dt>
           <dd className="ml0">Neville Khambatta ~ Gamecock</dd>
           <dt className="b mt2">Secretary</dt>
-          <dd className="ml0">Rupert Redington ~ Redwing</dd>
+          <dd className="ml0">Robin Slatter ~ Cavender</dd>
           <dt className="b mt2">Measurer</dt>
           <dd className="ml0">Dick Roe ~ Goldeneye</dd>
           <dt className="b mt2">Measurer</dt>
           <dd className="ml0">Simon Clayton ~ Decoy</dd>
         </dl>
         <dl className="lh-title pa1">
-          <dt className="b">Representative</dt>
+          <dt className="b">Traditional Representative</dt>
           <dd className="ml0">Bill Glover ~ Prawn</dd>
-          <dt className="b mt2">Representative</dt>
+          <dt className="b mt2">Hardchine Representative</dt>
           <dd className="ml0">Mark Elson ~ Snark</dd>
-          <dt className="b mt2">Representative</dt>
-          <dd className="ml0">Terry Vincent ~ Rainbow Trout</dd>
-          <dt className="b mt2">Representative</dt>
+          <dt className="b mt2">Hickling Representative</dt>
+          <dd className="ml0">Rupert Redington ~ Redwing</dd>
+          <dt className="b mt2">One-off Representative</dt>
           <dd className="ml0">Colin Murray ~ Whooper</dd>
         </dl>
       </div>
