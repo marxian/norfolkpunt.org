@@ -40,7 +40,7 @@ async function indexPunts() {
       Length: p.loa + 'ft',
     }))
   await fsPromises.writeFile(
-    './static/norfolk-punt-register.csv',
+    './public/norfolk-punt-register.csv',
     papa.unparse(register)
   )
 
