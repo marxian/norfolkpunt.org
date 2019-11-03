@@ -34,7 +34,7 @@ export default () => (
           <a
             target="_blank"
             className="link black underline-hover"
-            href="/public/norfolk-punt-register.csv"
+            href="/norfolk-punt-register.csv"
           >
             Norfolk Punt Class Register
           </a>
@@ -48,7 +48,7 @@ export default () => (
           <a
             target="_blank"
             className="link black underline-hover"
-            href="/public/norfolk-punt-rules-0.3.1.pdf"
+            href="/norfolk-punt-rules-0.3.1.pdf"
           >
             Norfolk Punt Rules v0.3.1
           </a>
@@ -60,7 +60,7 @@ export default () => (
           <a
             target="_blank"
             className="link black underline-hover"
-            href="/public/norfolk-punt-sail-measurement-form.xlsx"
+            href="/norfolk-punt-sail-measurement-form.xlsx"
           >
             Norfolk Punt Sail Measurement Form
           </a>
@@ -74,7 +74,7 @@ export default () => (
           <a
             target="_blank"
             className="link black underline-hover"
-            href="/public/norfolk-punt-owners-association-rules-procedures.pdf"
+            href="/norfolk-punt-owners-association-rules-procedures.pdf"
           >
             Rules &amp; Procedures of the Association
           </a>
