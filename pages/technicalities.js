@@ -57,7 +57,7 @@ export default () => (
           <a
             target="_blank"
             className="link black underline-hover"
-            href="/norfolk-punt-sail-insignia-svg"
+            href="/norfolk-punt-sail-insignia.svg"
           >
             Norfolk Punt Sail Insignia (optional)
           </a>
