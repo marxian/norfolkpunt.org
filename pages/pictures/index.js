@@ -24,7 +24,7 @@ export default () => {
           {chunks[0].map(img => (
             <a
               href={img.main}
-              className="grow db w-100"
+              className="db w-100"
               key={img.main}
               onClick={e => {
                 e.preventDefault()
@@ -40,7 +40,7 @@ export default () => {
           {chunks[1].map(img => (
             <a
               href={img.main}
-              className="grow db w-100"
+              className="db w-100"
               key={img.main}
               onClick={e => {
                 e.preventDefault()
@@ -56,7 +56,7 @@ export default () => {
           {chunks[2].map(img => (
             <a
               href={img.main}
-              className="grow db w-100"
+              className="db w-100"
               key={img.main}
               onClick={e => {
                 e.preventDefault()
