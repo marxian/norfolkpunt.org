@@ -32,6 +32,7 @@ export default () => (
       <ul>
         <li>
           <a
+            target="_blank"
             className="link black underline-hover"
             href="/static/norfolk-punt-rules-0.3.1.pdf"
           >
@@ -43,6 +44,7 @@ export default () => (
       <ul>
         <li>
           <a
+            target="_blank"
             className="link black underline-hover"
             href="/static/norfolk-punt-sail-measurement-form.xlsx"
           >
@@ -56,6 +58,7 @@ export default () => (
       <ul>
         <li>
           <a
+            target="_blank"
             className="link black underline-hover"
             href="/static/norfolk-punt-owners-association-rules-procedures.pdf"
           >
