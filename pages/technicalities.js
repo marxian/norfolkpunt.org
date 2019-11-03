@@ -53,6 +53,15 @@ export default () => (
             Norfolk Punt Rules v0.3.1
           </a>
         </li>
+        <li>
+          <a
+            target="_blank"
+            className="link black underline-hover"
+            href="/norfolk-punt-sail-insignia-svg"
+          >
+            Norfolk Punt Sail Insignia (optional)
+          </a>
+        </li>
       </ul>
       <h3>Measurement</h3>
       <ul>
