@@ -7,6 +7,7 @@
   "construction": "Wood (Carvel)",
   "design": "Traditional",
   "designer": "Herbert Woods",
+  "lost": true,
   "owners": [
     {
       "from": 1966,
