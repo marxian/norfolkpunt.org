@@ -1,8 +1,6 @@
 import React from 'react'
-import Link from 'next/link'
 import images from '../images'
 import Image from './Image'
-import BackgroundImage from './BackgroundImage'
 
 export default ({ punt, className }) => (
   <div className={`${className} bg-black-90 white tc grow`}>
