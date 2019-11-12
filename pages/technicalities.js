@@ -63,6 +63,8 @@ export default () => (
           </a>
         </li>
       </ul>
+    </article>
+    <article>
       <h3>Measurement</h3>
       <ul>
         <li>
@@ -72,6 +74,15 @@ export default () => (
             href="/norfolk-punt-sail-measurement-form.xlsx"
           >
             Norfolk Punt Sail Measurement Form
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            className="link black underline-hover"
+            href="/norfolk-punt-hull-measurement-form.xlsx"
+          >
+            Norfolk Punt Hull Measurement Form
           </a>
         </li>
       </ul>
