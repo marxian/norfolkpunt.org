@@ -3,7 +3,9 @@ import React from 'react'
 export default () => (
   <div className="center mw7 pv0 ph2">
     <article className="bt bb b--black-10">
-      <h2>Committee</h2>
+      <h2>
+        <a name="committee">Committee</a>
+      </h2>
       <div className="flex flex-column flex-row-ns f3 justify-around">
         <dl className="lh-title pa1">
           <dt className="b">Chair</dt>
@@ -28,7 +30,9 @@ export default () => (
       </div>
     </article>
     <article className="bt bb b--black-10">
-      <h2>Class Register</h2>
+      <h2>
+        <a name="class-register">Class Register</a>
+      </h2>
       <ul>
         <li>
           <a
@@ -42,7 +46,9 @@ export default () => (
       </ul>
     </article>
     <article className="bt bb b--black-10">
-      <h2>Class Rules</h2>
+      <h2>
+        <a name="class-rules">Class Rules</a>
+      </h2>
       <ul>
         <li>
           <a
@@ -88,7 +94,9 @@ export default () => (
       </ul>
     </article>
     <article className="bt bb b--black-10">
-      <h2>Procedures</h2>
+      <h2>
+        <a name="proceedures">Procedures</a>
+      </h2>
       <ul>
         <li>
           <a
