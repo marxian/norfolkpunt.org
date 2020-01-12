@@ -5,7 +5,7 @@ export default () => (
     <p className="fr f4">
       <a
         className="link white underline-hover"
-        href="mailto:norfolkpuntsec@yahoo.com"
+        href="mailto:norfolkpunt@gmail.com"
       >
         Contact
       </a>
