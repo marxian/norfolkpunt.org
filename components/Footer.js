@@ -10,7 +10,9 @@ export default () => (
         Contact
       </a>
     </p>
-    <p>&copy;2019 Norfolk&nbsp;Punt Owners&nbsp;Association</p>
+    <p>
+      &copy;{new Date().getFullYear()} Norfolk&nbsp;Punt Owners&nbsp;Association
+    </p>
     <p>
       Most photographs by kind permission &copy;&nbsp;
       <a
