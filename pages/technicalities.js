@@ -39,8 +39,20 @@ export default () => (
         style={{ 'border-width': 0 }}
         width="100%"
         height="600"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
+      ></iframe>
+    </article>
+    <article className="bt bb b--black-10">
+      <h2>
+        <a name="calendar">Meetings: Agendas &amp; Minutes</a>
+      </h2>
+      <iframe
+        title="minutes"
+        src="https://drive.google.com/embeddedfolderview?id=1_GfrEX-3LVga_6ZMYmJwSQznO0mbgLQ_#grid"
+        width="100%"
+        height="500"
+        frameBorder="0"
       ></iframe>
     </article>
     <article className="bt bb b--black-10">
