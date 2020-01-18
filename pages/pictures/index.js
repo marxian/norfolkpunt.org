@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import 'react-image-lightbox/style.css'
 import Lightbox from 'react-image-lightbox'
 import Image from '../../components/Image'
 import images from '../../images'

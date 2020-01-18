@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import Head from 'next/head'
 
 import '../styles/index.css'
+import 'react-image-lightbox/style.css'
 
 class MyApp extends App {
   render() {
