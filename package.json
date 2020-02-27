@@ -14,7 +14,7 @@
     "next": "9.2.2",
     "next-compose-plugins": "2.2.0",
     "next-fonts": "1.0.3",
-    "next-optimized-images": "2.5.4",
+    "next-optimized-images": "2.5.5",
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-image-lightbox": "5.1.1",

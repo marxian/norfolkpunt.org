@@ -6594,10 +6594,10 @@ next-fonts@1.0.3:
     file-loader "^2.0.0"
     url-loader "^1.1.1"
 
-next-optimized-images@2.5.4:
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/next-optimized-images/-/next-optimized-images-2.5.4.tgz#afc2812efd34901ebb0a8b18e21a5989b385cfe5"
-  integrity sha512-Vv/1NM1oeBm7ry2bfUzhqDtd5kHEuluEX0E6pdguVqrWIxa5WJzX4JwWlUR7OxD3BECa5uA13C0XkCtjG1Sdtg==
+next-optimized-images@2.5.5:
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/next-optimized-images/-/next-optimized-images-2.5.5.tgz#b37d35b4f4fdd211192c9ca8d71480ee72909d7d"
+  integrity sha512-bmSBsAcc0E+TuYF/72tO7pT0zHbMMPHt/OcmoOWa7vPNZv/rwj5YZeUlok+Ux1BnGINRWPgZKHxNiix+ZSKg7A==
   dependencies:
     chalk "^2.4.2"
     figures "^3.0.0"
