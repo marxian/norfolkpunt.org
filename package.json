@@ -5,7 +5,7 @@
   "author": "Rupert Redington <rupert@neontribe.co.uk>",
   "dependencies": {
     "gatsby-background-image": "1.0.1",
-    "gatsby-image": "2.2.42",
+    "gatsby-image": "2.3.1",
     "glob": "7.1.6",
     "image-size": "0.8.3",
     "imagemin-mozjpeg": "8.0.0",
