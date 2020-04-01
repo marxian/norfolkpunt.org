@@ -14,18 +14,18 @@ export default () => {
   const imgs = Object.values(images)
   const cs = Math.round(imgs.length / 3)
   const chunks = chunk(imgs, cs)
-  const getIndex = main => imgs.findIndex(img => img.main === main)
+  const getIndex = (main) => imgs.findIndex((img) => img.main === main)
 
   return (
     <>
       <div className="cf">
         <div className="fl w-50 w-third-ns">
-          {chunks[0].map(img => (
+          {chunks[0].map((img) => (
             <a
               href={img.main}
               className="db w-100"
               key={img.main}
-              onClick={e => {
+              onClick={(e) => {
                 e.preventDefault()
                 setPhotoIndex(getIndex(img.main))
                 setOpen(true)
@@ -36,12 +36,12 @@ export default () => {
           ))}
         </div>
         <div className="fl w-50 w-third-ns">
-          {chunks[1].map(img => (
+          {chunks[1].map((img) => (
             <a
               href={img.main}
               className="db w-100"
               key={img.main}
-              onClick={e => {
+              onClick={(e) => {
                 e.preventDefault()
                 setPhotoIndex(getIndex(img.main))
                 setOpen(true)
@@ -52,12 +52,12 @@ export default () => {
           ))}
         </div>
         <div className="fl w-50 w-third-ns">
-          {chunks[2].map(img => (
+          {chunks[2].map((img) => (
             <a
               href={img.main}
               className="db w-100"
               key={img.main}
-              onClick={e => {
+              onClick={(e) => {
                 e.preventDefault()
                 setPhotoIndex(getIndex(img.main))
                 setOpen(true)
