@@ -1,0 +1,89 @@
+backend:
+  name: github
+  repo: marxian/norfolkpunt
+  branch: cms
+  base_url: https://norfolkpunt-git-cms.marxian.now.sh
+  auth_endpoint: api/begin
+  commit_messages:
+    create: "feat: add {{collection}} {{slug}}"
+    update: "fix: update {{collection}} {{slug}}"
+    delete: "fix: remove {{collection}} {{slug}}"
+    uploadMedia: "feat: add media {{path}}"
+    deleteMedia: "fix: remove media {{path}}"
+publish_mode: editorial_workflow
+site_url: https://norfolkpunt-git-cms.marxian.now.sh
+logo_url: https://norfolkpunt-git-cms.marxian.now.sh/logo.png
+# when using the default proxy server port
+local_backend: true
+#local_backend:
+  # when using a custom proxy server port
+  #url: http://localhost:8082/api/v1
+  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
+  #allowed_hosts: ['192.168.0.1']
+media_folder: public/img
+public_folder: img
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: norfolkpunt
+    api_key: 159193368347463
+collections:
+  - name: "boats"
+    label: "Boats"
+    label_singular: "Boat"
+    folder: "content/boats"
+    preview_path: "punts/{{slug}}"
+    create: true
+    slug: "{{name}}-{{fields.sailNumber}"
+    extension: md
+    identifier_field: name
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Sail Number"
+        name: "sailNumber"
+        widget: "number"
+      - label: "Cover Image"
+        name: "coverImage"
+        widget: "image"
+        required: false
+        tagname: ""
+      - label: "Year Built"
+        name: "yearBuilt"
+        widget: "number"
+      - label: "Length"
+        name: "loa"
+        widget: "number"
+        hint: "in feet"
+      - label: "Handicap"
+        name: "handicap"
+        widget: "number"
+        hint: "Portsmouth Yardstick"
+      - label: "Builder"
+        name: "builder"
+        widget: "string"
+      - label: "Construction"
+        name: "construction"
+        widget: "string"
+      - label: "Design"
+        name: "design"
+        widget: "string"
+      - label: "Designer"
+        name: "designer"
+        widget: "string"
+      - label: "Owners"
+        name: "owners"
+        widget: "list"
+        fields:
+          - label: "From"
+            name: "from"
+            widget: "number"
+          - label: "To"
+            name: "to"
+            widget: "number"
+          - label: "Owner"
+            name: "owner"
+            widget: "string"
+
+

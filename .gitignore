@@ -11,3 +11,5 @@ yarn-error.log
 /images.js
 /punts.json
 /pictures.js
+
+.env
