@@ -80,6 +80,7 @@ collections:
           - label: "To"
             name: "to"
             widget: "number"
+            required: false
           - label: "Owner"
             name: "owner"
             widget: "string"
