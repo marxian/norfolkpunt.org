@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: marxian/norfolkpunt
-  branch: cms
+  branch: master
   base_url: https://www.norfolkpunt.org
   auth_endpoint: api/begin
   commit_messages:
