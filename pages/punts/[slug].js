@@ -9,13 +9,13 @@ export default function Boat({ boat }) {
 }
 
 export async function getStaticProps({ params }) {
-  const boat = getBoatBySlug(params.slug)
-  const content = await markdownToHtml(boat.content || '')
+  const { data, content: markdown = '' } = getBoatBySlug(params.slug)
+  const content = await markdownToHtml(markdown)
 
   return {
     props: {
       boat: {
-        ...boat,
+        data,
         content,
       },
     },

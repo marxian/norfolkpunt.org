@@ -2,7 +2,7 @@ backend:
   name: github
   repo: marxian/norfolkpunt
   branch: cms
-  base_url: https://norfolkpunt-git-cms.marxian.now.sh
+  base_url: https://www.norfolkpunt.org
   auth_endpoint: api/begin
   commit_messages:
     create: "feat: add {{collection}} {{slug}}"
@@ -10,16 +10,13 @@ backend:
     delete: "fix: remove {{collection}} {{slug}}"
     uploadMedia: "feat: add media {{path}}"
     deleteMedia: "fix: remove media {{path}}"
+#local_backend: true
+
 publish_mode: editorial_workflow
-site_url: https://norfolkpunt-git-cms.marxian.now.sh
-logo_url: https://norfolkpunt-git-cms.marxian.now.sh/logo.png
-# when using the default proxy server port
-local_backend: true
-#local_backend:
-  # when using a custom proxy server port
-  #url: http://localhost:8082/api/v1
-  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
-  #allowed_hosts: ['192.168.0.1']
+
+site_url: https://www.norfolkpunt.org
+logo_url: https://www.norfolkpunt.org/logo.png
+
 media_folder: public/img
 public_folder: img
 media_library:
@@ -27,6 +24,7 @@ media_library:
   config:
     cloud_name: norfolkpunt
     api_key: 159193368347463
+
 collections:
   - name: "boats"
     label: "Boats"
