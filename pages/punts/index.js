@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { getBoats } from '../../lib/cms'
-import PuntCard from '../../components/PuntCard'
+import PuntCard from '../../components/PuntCard2'
 
 export default ({ punts }) => {
   //sort punts by number descending
