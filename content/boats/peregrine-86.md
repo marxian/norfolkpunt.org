@@ -21,6 +21,6 @@ owners:
     owner: "Richard Parker & Robert Snelling"
 sailNumber: 86
 yearBuilt: 1993
-coverImage: "peregrine-86"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/peregrine-86.jpg"
 
 ---

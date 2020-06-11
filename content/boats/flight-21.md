@@ -30,6 +30,6 @@ owners:
     owner: "G L Fitt"
 sailNumber: 21
 yearBuilt: 1929
-coverImage: "flight-21"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/flight-21.jpg"
 
 ---

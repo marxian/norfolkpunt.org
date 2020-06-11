@@ -21,6 +21,6 @@ owners:
     owner: "M Hardy"
 sailNumber: 76
 yearBuilt: 1989
-coverImage: "kookaburra-76"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/kookaburra-76.jpg"
 
 ---

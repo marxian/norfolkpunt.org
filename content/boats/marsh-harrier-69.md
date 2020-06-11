@@ -36,6 +36,6 @@ owners:
     owner: "F M G Anderson"
 sailNumber: 69
 yearBuilt: 1978
-coverImage: "marsh-harrier-69"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/marsh-harrier-69.jpg"
 
 ---

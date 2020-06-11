@@ -30,6 +30,6 @@ owners:
     owner: "M Thwaites"
 sailNumber: 77
 yearBuilt: 1989
-coverImage: "rhode-island-red-77"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/rhode-island-red-77.jpg"
 
 ---

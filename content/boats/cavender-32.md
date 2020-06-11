@@ -39,6 +39,6 @@ owners:
     owner: "S G Wheeler (Eng Capt RN Retd)"
 sailNumber: 32
 yearBuilt: 1933
-coverImage: "cavender-32"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/cavender-32.jpg"
 
 ---

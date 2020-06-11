@@ -34,6 +34,6 @@ owners:
 sailNumber: 49
 yearBuilt: 1956
 previousNames: "Teal (1978 - 1994)"
-coverImage: "snark-49"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/snark-49.jpg"
 
 ---

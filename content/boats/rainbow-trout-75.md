@@ -27,6 +27,6 @@ owners:
     owner: "N Potter"
 sailNumber: 75
 yearBuilt: 1989
-coverImage: "rainbow-trout-75"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/rainbow-trout-75.jpg"
 
 ---

@@ -27,6 +27,6 @@ owners:
     owner: "H A Morris"
 sailNumber: 1
 yearBuilt: 1916
-coverImage: "shrimp-1"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/shrimp-1.jpg"
 
 ---

@@ -12,6 +12,6 @@ owners:
     owner: "Richard Whitefoot"
 sailNumber: 102
 yearBuilt: 2008
-coverImage: "comet-102"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/comet-102.jpg"
 
 ---

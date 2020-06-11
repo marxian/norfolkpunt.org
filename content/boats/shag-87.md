@@ -12,6 +12,6 @@ owners:
     owner: "James Gill"
 sailNumber: 87
 yearBuilt: 1993
-coverImage: "shag-87"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/shag-87.jpg"
 
 ---

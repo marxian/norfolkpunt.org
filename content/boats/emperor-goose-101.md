@@ -15,6 +15,6 @@ owners:
     owner: "John Parker"
 sailNumber: 101
 yearBuilt: 2004
-coverImage: "emperor-goose-101"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/emperor-goose-101.jpg"
 
 ---

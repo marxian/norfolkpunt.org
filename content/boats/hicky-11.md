@@ -15,6 +15,6 @@ owners:
     owner: "C E Howard"
 sailNumber: 11
 yearBuilt: 1930
-coverImage: "hicky-11"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/hicky-11.jpg"
 
 ---

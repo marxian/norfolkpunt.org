@@ -30,6 +30,6 @@ owners:
     owner: "Mr and Mrs J M Plaice"
 sailNumber: 51
 yearBuilt: 1961
-coverImage: "harnser-51"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/harnser-51.jpg"
 
 ---

@@ -24,6 +24,6 @@ owners:
     owner: "Dr and Mrs B M Tracey"
 sailNumber: 53
 yearBuilt: 1962
-coverImage: "wild-goose-53"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/wild-goose-53.jpg"
 
 ---

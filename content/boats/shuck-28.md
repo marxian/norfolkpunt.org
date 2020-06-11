@@ -42,6 +42,6 @@ owners:
     owner: "T Mase"
 sailNumber: 28
 yearBuilt: 1931
-coverImage: "shuck-28"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/shuck-28.jpg"
 
 ---

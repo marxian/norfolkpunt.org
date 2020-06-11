@@ -27,6 +27,6 @@ owners:
     owner: "D H Adler"
 sailNumber: 70
 yearBuilt: 1980
-coverImage: "barnacle-goose-70"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/barnacle-goose-70.jpg"
 
 ---

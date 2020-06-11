@@ -13,6 +13,6 @@ owners:
     owner: "Arthur R. Batchelor"
 sailNumber: 2
 yearBuilt: 1927
-coverImage: "jenny-spinner-2"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/jenny-spinner-2.jpg"
 
 ---

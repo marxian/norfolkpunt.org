@@ -18,6 +18,6 @@ owners:
     owner: "Herbert Woods"
 sailNumber: 26
 yearBuilt: 1931
-coverImage: "spotlight-26"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/spotlight-26.jpg"
 
 ---

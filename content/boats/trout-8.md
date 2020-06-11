@@ -21,6 +21,6 @@ owners:
     owner: "Bishop"
 sailNumber: 8
 yearBuilt: 1926
-coverImage: "trout-8"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/trout-8.jpg"
 
 ---

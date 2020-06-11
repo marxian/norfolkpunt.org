@@ -12,6 +12,6 @@ owners:
     owner: "D H Adler"
 sailNumber: 95
 yearBuilt: 2002
-coverImage: "white-eagle-95"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/white-eagle-95.jpg"
 
 ---

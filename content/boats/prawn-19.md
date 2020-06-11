@@ -21,6 +21,6 @@ owners:
     owner: "H A Morris"
 sailNumber: 19
 yearBuilt: 1918
-coverImage: "prawn-19"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/prawn-19.jpg"
 
 ---

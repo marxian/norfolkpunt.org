@@ -31,6 +31,6 @@ owners:
     owner: "W F Jermy"
 sailNumber: 14
 yearBuilt: 1929
-coverImage: "pintail-14"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/pintail-14.jpg"
 
 ---

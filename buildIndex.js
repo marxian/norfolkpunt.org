@@ -27,7 +27,9 @@ async function indexPunts() {
 
       let { slug, coverImage, images, category, ...core } = data
       if (coverImage) {
-        core.coverImage = coverImage.split('/').pop().split('.')[0]
+        core.coverImage = `https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/${coverImage
+          .split('/')
+          .pop()}`
       }
       let yml = YAML.stringify(core)
       let md = `---\n${yml}\n---`

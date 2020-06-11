@@ -37,6 +37,6 @@ owners:
 sailNumber: 50
 yearBuilt: 1958
 previousNames: "Flamer (1958 - 1967)"
-coverImage: "greylag-50"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/greylag-50.jpg"
 
 ---

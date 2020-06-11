@@ -12,5 +12,5 @@ owners:
     owner: "Chris Wood"
 sailNumber: 105
 yearBuilt: 2019
-coverImage: "woodlark-105"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/woodlark-105.jpg"
 ---

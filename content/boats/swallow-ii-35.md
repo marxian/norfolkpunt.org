@@ -39,6 +39,6 @@ owners:
     owner: "G S Sturgess"
 sailNumber: 35
 yearBuilt: 1936
-coverImage: "swallow-ii-35"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/swallow-ii-35.jpg"
 
 ---

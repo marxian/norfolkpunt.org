@@ -31,6 +31,6 @@ owners:
 sailNumber: 25
 yearBuilt: 1928
 previousNames: "Scoter"
-coverImage: "goldeneye-25"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/goldeneye-25.jpg"
 
 ---

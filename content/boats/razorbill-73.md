@@ -28,6 +28,6 @@ owners:
 sailNumber: 73
 yearBuilt: 1985
 previousNames: "Reedham Nan (1985 - 1987)"
-coverImage: "razorbill-73"
+coverImage: "https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/razorbill-73.jpg"
 
 ---
