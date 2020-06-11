@@ -1,26 +1,26 @@
 ---
-name: "Blackbird"
+name: Blackbird
+sailNumber: 74
+coverImage: >-
+  https://res.cloudinary.com/norfolkpunt/image/upload/v1591888209/blackbird-74.jpg
+yearBuilt: 1989
 loa: 22
 handicap: 880
-builder: "S. Read"
-construction: "Cold-moulded Plywood"
-design: "Morrison"
-designer: "Phil Morrison"
+builder: S. Read
+construction: Cold-moulded Plywood
+design: Morrison
+designer: Phil Morrison
 owners:
   - from: 2005
-    to: null
-    owner: "J M Friend & S Girling"
+    owner: J M Friend & S Girling
   - from: 1997
+    owner: C Pilling
     to: 2005
-    owner: "C Pilling"
   - from: 1988
+    owner: R C Sadler
     to: 1997
-    owner: "R C Sadler"
   - from: 1988
+    owner: P J K Sadler
     to: 1997
-    owner: "P J K Sadler"
-sailNumber: 74
-yearBuilt: 1989
-coverImage: "blackbird-74"
-
 ---
+
