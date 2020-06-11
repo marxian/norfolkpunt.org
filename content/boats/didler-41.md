@@ -36,6 +36,5 @@ owners:
     owner: "R D H Harmer"
 sailNumber: 41
 yearBuilt: 1937
-category: "punts"
 
 ---

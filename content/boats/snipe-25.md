@@ -16,6 +16,5 @@ owners:
     owner: "C A Grimes"
 sailNumber: 25
 yearBuilt: 1930
-category: "punts"
 
 ---

@@ -29,6 +29,5 @@ owners:
 sailNumber: 16
 yearBuilt: 1929
 previousNames: "Harrier"
-category: "punts"
 
 ---

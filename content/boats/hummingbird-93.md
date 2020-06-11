@@ -12,6 +12,5 @@ owners:
     owner: "Daren Pike"
 sailNumber: 93
 yearBuilt: 2000
-category: "punts"
 
 ---

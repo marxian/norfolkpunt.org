@@ -13,6 +13,5 @@ owners:
     owner: "M Hodson"
 sailNumber: 31
 yearBuilt: 1933
-category: "punts"
 
 ---

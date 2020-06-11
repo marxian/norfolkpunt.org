@@ -37,6 +37,6 @@ owners:
 sailNumber: 50
 yearBuilt: 1958
 previousNames: "Flamer (1958 - 1967)"
-category: "punts"
+coverImage: "greylag-50"
 
 ---

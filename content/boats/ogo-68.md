@@ -14,6 +14,5 @@ owners:
 sailNumber: 68
 yearBuilt: 1978
 previousNames: "Swordfish"
-category: "punts"
 
 ---

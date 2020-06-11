@@ -16,6 +16,5 @@ owners:
     owner: "T E Carter"
 sailNumber: 56
 yearBuilt: 1966
-category: "punts"
 
 ---

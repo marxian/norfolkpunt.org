@@ -23,6 +23,6 @@ owners:
 sailNumber: 6
 yearBuilt: 1926
 previousNames: "Swallow (to 1936) Titmouse (to 1947)"
-category: "punts"
+coverImage: "reed-pheasant-6"
 
 ---

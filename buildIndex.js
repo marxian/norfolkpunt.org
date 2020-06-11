@@ -12,24 +12,26 @@ async function indexPunts() {
   const puntList = await Promise.all(
     puntDirs.map(async (base) => {
       let data = require(base + '/details.json')
-      let { slug, ...core } = data
-      let yml = YAML.stringify(core)
 
-      let md = `---\n${yml}\n---`
-
-      await fsPromises.writeFile(`./content/boats/${data.slug}.md`, md)
-
-      let images = glob.sync(base + '/*.{jpg,png}')
+      let imgs = glob.sync(base + '/*.{jpg,png}')
       data.images = []
       data.coverImage = null
       let coverMatch = new RegExp(`${data.slug}.*`)
-      images.forEach((img) => {
+      imgs.forEach((img) => {
         if (coverMatch.test(img)) {
           data.coverImage = img
         } else {
           data.images.push(img)
         }
       })
+
+      let { slug, coverImage, images, category, ...core } = data
+      if (coverImage) {
+        core.coverImage = coverImage.split('/').pop().split('.')[0]
+      }
+      let yml = YAML.stringify(core)
+      let md = `---\n${yml}\n---`
+      await fsPromises.writeFile(`./content/boats/${data.slug}.md`, md)
 
       return data
     })

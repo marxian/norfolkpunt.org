@@ -21,6 +21,5 @@ owners:
     owner: "T Hubbard"
 sailNumber: 83
 yearBuilt: 1991
-category: "punts"
 
 ---

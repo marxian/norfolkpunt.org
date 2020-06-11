@@ -13,6 +13,5 @@ owners:
     owner: "Richard Parker"
 sailNumber: 78
 yearBuilt: 1990
-category: "punts"
 
 ---

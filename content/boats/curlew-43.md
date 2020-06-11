@@ -58,6 +58,6 @@ owners:
 sailNumber: 43
 yearBuilt: 1939
 previousNames: "Bloater (1939 -1948) Dark Lady (1948 -1953)"
-category: "punts"
+coverImage: "curlew-43"
 
 ---

@@ -19,6 +19,5 @@ owners:
     owner: "Unknown"
 sailNumber: 0
 yearBuilt: 1936
-category: "punts"
 
 ---

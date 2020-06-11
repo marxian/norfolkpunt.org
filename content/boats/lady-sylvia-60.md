@@ -21,6 +21,5 @@ owners:
     owner: "J E Mockett"
 sailNumber: 60
 yearBuilt: 1972
-category: "punts"
 
 ---

@@ -31,6 +31,6 @@ owners:
     owner: "W F Jermy"
 sailNumber: 14
 yearBuilt: 1929
-category: "punts"
+coverImage: "pintail-14"
 
 ---

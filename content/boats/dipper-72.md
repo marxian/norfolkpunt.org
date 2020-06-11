@@ -21,6 +21,5 @@ owners:
     owner: "J D Sennitt"
 sailNumber: 72
 yearBuilt: 1981
-category: "punts"
 
 ---

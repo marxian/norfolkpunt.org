@@ -31,6 +31,5 @@ owners:
     owner: "C R Howlett"
 sailNumber: 12
 yearBuilt: 1929
-category: "punts"
 
 ---

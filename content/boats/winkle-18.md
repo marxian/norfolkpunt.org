@@ -23,6 +23,5 @@ owners:
 sailNumber: 18
 yearBuilt: 1929
 previousNames: "Privateer"
-category: "punts"
 
 ---

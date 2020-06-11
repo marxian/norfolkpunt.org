@@ -36,6 +36,6 @@ owners:
     owner: "F M G Anderson"
 sailNumber: 69
 yearBuilt: 1978
-category: "punts"
+coverImage: "marsh-harrier-69"
 
 ---

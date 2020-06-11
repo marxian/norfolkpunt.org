@@ -13,6 +13,5 @@ owners:
     owner: "J V Cook"
 sailNumber: 15
 yearBuilt: 1930
-category: "punts"
 
 ---

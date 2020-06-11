@@ -46,6 +46,6 @@ owners:
 sailNumber: 36
 yearBuilt: 1936
 previousNames: "Ariel (1947-8) Woodpecker(1948-9)"
-category: "punts"
+coverImage: "rosybill-36"
 
 ---

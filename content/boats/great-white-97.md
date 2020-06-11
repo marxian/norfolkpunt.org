@@ -24,6 +24,6 @@ owners:
     owner: "Richard Parker"
 sailNumber: 97
 yearBuilt: 2003
-category: "punts"
+coverImage: "great-white-97"
 
 ---

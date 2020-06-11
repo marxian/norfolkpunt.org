@@ -30,6 +30,6 @@ owners:
     owner: "C Forbes"
 sailNumber: 30
 yearBuilt: 1933
-category: "punts"
+coverImage: "dodman-30"
 
 ---

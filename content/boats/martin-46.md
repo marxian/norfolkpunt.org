@@ -36,6 +36,6 @@ owners:
     owner: "Dr and Mrs B M Tracey"
 sailNumber: 46
 yearBuilt: 1947
-category: "punts"
+coverImage: "martin-46"
 
 ---

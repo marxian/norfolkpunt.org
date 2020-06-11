@@ -27,6 +27,5 @@ owners:
     owner: "Dr and Mrs B M Tracey"
 sailNumber: 48
 yearBuilt: 1954
-category: "punts"
 
 ---

@@ -18,6 +18,5 @@ owners:
     owner: "R McDonald Cobb"
 sailNumber: 62
 yearBuilt: 1976
-category: "punts"
 
 ---

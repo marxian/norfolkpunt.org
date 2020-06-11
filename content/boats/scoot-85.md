@@ -12,6 +12,6 @@ owners:
     owner: "Dr and Mrs J S L Fowler"
 sailNumber: 85
 yearBuilt: 1991
-category: "punts"
+coverImage: "scoot-85"
 
 ---

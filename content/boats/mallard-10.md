@@ -28,6 +28,5 @@ owners:
     owner: "P E Martin"
 sailNumber: 10
 yearBuilt: 1928
-category: "punts"
 
 ---

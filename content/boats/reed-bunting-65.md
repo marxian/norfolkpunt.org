@@ -27,6 +27,5 @@ owners:
     owner: "S F Read"
 sailNumber: 65
 yearBuilt: 1978
-category: "punts"
 
 ---

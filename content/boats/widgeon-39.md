@@ -36,6 +36,5 @@ owners:
     owner: "W Jermy"
 sailNumber: 39
 yearBuilt: 1937
-category: "punts"
 
 ---

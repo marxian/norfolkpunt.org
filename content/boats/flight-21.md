@@ -30,6 +30,6 @@ owners:
     owner: "G L Fitt"
 sailNumber: 21
 yearBuilt: 1929
-category: "punts"
+coverImage: "flight-21"
 
 ---

@@ -13,6 +13,5 @@ owners:
     owner: "S A Brooks (Lt Cdr RN)"
 sailNumber: 3
 yearBuilt: 1929
-category: "punts"
 
 ---

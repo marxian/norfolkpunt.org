@@ -15,6 +15,6 @@ owners:
     owner: "C E Howard"
 sailNumber: 11
 yearBuilt: 1930
-category: "punts"
+coverImage: "hicky-11"
 
 ---

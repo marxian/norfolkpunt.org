@@ -36,6 +36,6 @@ owners:
     owner: "J S Curl"
 sailNumber: 40
 yearBuilt: 1937
-category: "punts"
+coverImage: "decoy-40"
 
 ---

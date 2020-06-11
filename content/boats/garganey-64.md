@@ -37,6 +37,5 @@ owners:
 sailNumber: 64
 yearBuilt: 1977
 previousNames: "Golden Jubilee (1977 - 1989)"
-category: "punts"
 
 ---

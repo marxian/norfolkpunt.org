@@ -15,6 +15,6 @@ owners:
     owner: "Chris Wood"
 sailNumber: 99
 yearBuilt: 2004
-category: "punts"
+coverImage: "woodpecker-99"
 
 ---

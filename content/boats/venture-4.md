@@ -16,6 +16,5 @@ owners:
     owner: "Unknown"
 sailNumber: 4
 yearBuilt: 1925
-category: "punts"
 
 ---

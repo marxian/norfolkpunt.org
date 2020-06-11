@@ -31,6 +31,6 @@ owners:
 sailNumber: 25
 yearBuilt: 1928
 previousNames: "Scoter"
-category: "punts"
+coverImage: "goldeneye-25"
 
 ---

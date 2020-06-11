@@ -18,6 +18,5 @@ owners:
     owner: "W L Rhodes"
 sailNumber: 80
 yearBuilt: 1991
-category: "punts"
 
 ---

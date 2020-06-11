@@ -18,6 +18,5 @@ owners:
     owner: "T R Scott"
 sailNumber: 57
 yearBuilt: 1970
-category: "punts"
 
 ---

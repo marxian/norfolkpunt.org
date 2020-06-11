@@ -13,6 +13,5 @@ owners:
     owner: "J V de B Grey"
 sailNumber: 63
 yearBuilt: 1976
-category: "punts"
 
 ---

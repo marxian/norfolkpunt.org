@@ -18,6 +18,6 @@ owners:
     owner: "Alex Tibbenham"
 sailNumber: 92
 yearBuilt: 1999
-category: "punts"
+coverImage: "flamingo-92"
 
 ---

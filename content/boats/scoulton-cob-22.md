@@ -13,6 +13,5 @@ owners:
     owner: "Midshipman C S Robinson RN"
 sailNumber: 22
 yearBuilt: 1922
-category: "punts"
 
 ---

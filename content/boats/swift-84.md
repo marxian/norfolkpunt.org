@@ -21,6 +21,5 @@ owners:
     owner: "M Thwaites"
 sailNumber: 84
 yearBuilt: 1991
-category: "punts"
 
 ---

@@ -12,6 +12,6 @@ owners:
     owner: "Jane Pye & John Parker"
 sailNumber: 96
 yearBuilt: 2003
-category: "punts"
+coverImage: "snow-goose-96"
 
 ---

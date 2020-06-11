@@ -30,6 +30,6 @@ owners:
     owner: "T E Harmer"
 sailNumber: 55
 yearBuilt: 1963
-category: "punts"
+coverImage: "kingfisher-55"
 
 ---

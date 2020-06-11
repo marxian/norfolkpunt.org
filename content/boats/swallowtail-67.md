@@ -27,6 +27,5 @@ owners:
     owner: "Colin McDougall"
 sailNumber: 67
 yearBuilt: 1977
-category: "punts"
 
 ---

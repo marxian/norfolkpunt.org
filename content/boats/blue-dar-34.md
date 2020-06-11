@@ -22,6 +22,5 @@ owners:
     owner: "E N Adcock"
 sailNumber: 34
 yearBuilt: 1934
-category: "punts"
 
 ---

@@ -22,6 +22,5 @@ owners:
     owner: "E Chamberlain"
 sailNumber: 24
 yearBuilt: 1930
-category: "punts"
 
 ---

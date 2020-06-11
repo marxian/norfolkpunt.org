@@ -16,6 +16,6 @@ owners:
     owner: "H Bolingbroke"
 sailNumber: 5
 yearBuilt: 1927
-category: "punts"
+coverImage: "scud-5"
 
 ---

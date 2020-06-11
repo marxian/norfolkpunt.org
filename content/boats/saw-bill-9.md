@@ -13,6 +13,5 @@ owners:
     owner: "Arnold Churchill"
 sailNumber: 9
 yearBuilt: 1927
-category: "punts"
 
 ---

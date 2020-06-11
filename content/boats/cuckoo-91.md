@@ -15,6 +15,5 @@ owners:
     owner: "Peter Bainbridge"
 sailNumber: 91
 yearBuilt: 1995
-category: "punts"
 
 ---

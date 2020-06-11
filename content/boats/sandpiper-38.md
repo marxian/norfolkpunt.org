@@ -31,6 +31,5 @@ owners:
 sailNumber: 38
 yearBuilt: 1936
 previousNames: "Sprat (until 1949)"
-category: "punts"
 
 ---

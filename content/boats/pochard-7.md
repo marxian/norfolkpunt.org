@@ -16,6 +16,5 @@ owners:
     owner: "Lord Desborough"
 sailNumber: 7
 yearBuilt: 1909
-category: "punts"
 
 ---

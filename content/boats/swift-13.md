@@ -13,6 +13,5 @@ owners:
     owner: "Evelyn Shaw"
 sailNumber: 13
 yearBuilt: 1928
-category: "punts"
 
 ---

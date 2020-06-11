@@ -13,6 +13,5 @@ owners:
     owner: "Sir Edward Stracey Bart."
 sailNumber: 20
 yearBuilt: 1930
-category: "punts"
 
 ---

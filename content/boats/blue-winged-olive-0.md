@@ -13,6 +13,5 @@ owners:
     owner: "Arthur R. Batchelor"
 sailNumber: 0
 yearBuilt: 1936
-category: "punts"
 
 ---

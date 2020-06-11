@@ -15,6 +15,6 @@ owners:
     owner: "Mark Critchley"
 sailNumber: 100
 yearBuilt: 2004
-category: "punts"
+coverImage: "jackdaw-100"
 
 ---

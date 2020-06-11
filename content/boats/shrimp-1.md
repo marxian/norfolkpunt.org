@@ -27,6 +27,6 @@ owners:
     owner: "H A Morris"
 sailNumber: 1
 yearBuilt: 1916
-category: "punts"
+coverImage: "shrimp-1"
 
 ---

@@ -26,6 +26,10 @@ media_library:
     api_key: 159193368347463
 
 collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Pictures"
   - name: "boats"
     label: "Boats"
     label_singular: "Boat"

@@ -30,6 +30,5 @@ owners:
     owner: "Norfolk Punt Club"
 sailNumber: 47
 yearBuilt: 1953
-category: "punts"
 
 ---

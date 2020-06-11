@@ -39,6 +39,6 @@ owners:
     owner: "Capt C B Wilson MC"
 sailNumber: 33
 yearBuilt: 1934
-category: "punts"
+coverImage: "sardine-33"
 
 ---

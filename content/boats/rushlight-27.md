@@ -63,6 +63,6 @@ owners:
     owner: "Herbert Woods"
 sailNumber: 27
 yearBuilt: 1930
-category: "punts"
+coverImage: "rushlight-27"
 
 ---

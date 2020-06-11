@@ -12,6 +12,5 @@ owners:
     owner: "Richard Stephenson"
 sailNumber: 104
 yearBuilt: 2016
-category: "punts"
 
 ---

@@ -28,6 +28,5 @@ owners:
     owner: "Frank Beeching"
 sailNumber: 42
 yearBuilt: 1938
-category: "punts"
 
 ---

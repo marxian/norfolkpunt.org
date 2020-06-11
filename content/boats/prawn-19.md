@@ -21,6 +21,6 @@ owners:
     owner: "H A Morris"
 sailNumber: 19
 yearBuilt: 1918
-category: "punts"
+coverImage: "prawn-19"
 
 ---

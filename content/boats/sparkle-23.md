@@ -13,6 +13,5 @@ owners:
     owner: "T H Gordon Wright"
 sailNumber: 23
 yearBuilt: 1930
-category: "punts"
 
 ---
