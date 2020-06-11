@@ -30,6 +30,13 @@ collections:
     label: "Pages"
     files:
       - label: "Pictures"
+        name: "pictures"
+        file: "content/pictures.md"
+        fields:
+          - label: "Pictures"
+            name: "pictures"
+            widget: "list"
+            field: {widget: "image"}
   - name: "boats"
     label: "Boats"
     label_singular: "Boat"
