@@ -17,19 +17,6 @@ export default ({ punt, className }) => (
         urlParams="c_fill,g_auto"
       />
     ) : (
-      // <Image
-      //   cloudName="norfolkpunt"
-      //   publicId={punt.coverImage.split('/').pop()}
-      //   dpr="auto"
-      //   responsive
-      //   width="auto"
-      //   crop="fill"
-      //   gravity="auto"
-      //   responsiveUseBreakpoints="true"
-      //   aspect_ratio="1"
-      // >
-      //   <Transformation quality="auto" fetchFormat="auto" />
-      // </Image>
       <Img
         cloudName="norfolkpunt"
         imageName="photograph-wanted"

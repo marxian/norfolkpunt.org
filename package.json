@@ -48,7 +48,8 @@
     "start": "next start",
     "format": "prettier --write '{*/**,.}/*.{js,json}'",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "localcms": "netlify-cms-proxy-server"
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
@@ -62,6 +63,7 @@
     "husky": "4.2.5",
     "json-to-pretty-yaml": "1.2.2",
     "lint-staged": "10.2.9",
+    "netlify-cms-proxy-server": "1.2.8",
     "papaparse": "5.2.0",
     "prettier": "2.0.5"
   },

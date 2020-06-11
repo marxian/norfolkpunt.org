@@ -10,7 +10,7 @@ backend:
     delete: "fix: remove {{collection}} {{slug}}"
     uploadMedia: "feat: add media {{path}}"
     deleteMedia: "fix: remove media {{path}}"
-#local_backend: true
+local_backend: true
 
 #publish_mode: editorial_workflow
 
