@@ -12,7 +12,7 @@ backend:
     deleteMedia: "fix: remove media {{path}}"
 #local_backend: true
 
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 site_url: https://www.norfolkpunt.org
 logo_url: https://www.norfolkpunt.org/logo.png
