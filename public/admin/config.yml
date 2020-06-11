@@ -32,11 +32,23 @@ collections:
       - label: "Pictures"
         name: "pictures"
         file: "content/pictures.md"
+        preview: false
         fields:
           - label: "Pictures"
             name: "pictures"
             widget: "list"
-            field: {widget: "image"}
+            field: {label: Image, name: image, widget: image}
+      - label: "Home"
+        name: "home"
+        file: "content/home.md"
+        preview: false
+        fields:
+          - label: "Banner"
+            name: "banner"
+            widget: "image"
+          - label: "Feature"
+            name: "feature"
+            widget: "image"
   - name: "boats"
     label: "Boats"
     label_singular: "Boat"

@@ -1,17 +1,20 @@
 import React from 'react'
-import BackgroundImage from '../components/BackgroundImage'
-import Image from '../components/Image'
+import Img from 'react-cloudinary-lazy-image'
+import { getHome } from '../lib/cms'
 
-export default () => (
+export default ({ data }) => (
   <>
-    <BackgroundImage
+    <Img
       className="dt tc h5 vh-50-l w-100"
       Tag="header"
-      data={{
-        lqip: require('../images/line.jpg?lqip'),
-        fluid: require('../images/line.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000&sizes=2000'),
+      cloudName={'norfolkpunt'}
+      imageName={data.banner.split('/').pop()}
+      fluid={{
+        maxWidth: 970,
+        height: 250,
       }}
-    ></BackgroundImage>
+      urlParams="c_fill,g_auto"
+    />
     <p className="tc f1-l f3-m measure pa1">
       Pointed at both ends, 22ft long, 22 meters of sail, no maximum spinnaker
       size, no minimum weight.
@@ -21,11 +24,14 @@ export default () => (
         <div className="db pv4 ph3 ph0-l">
           <div className="flex flex-column flex-row-ns">
             <div className="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-              <Image
-                className="db"
-                data={{
-                  lqip: require('../images/twos.jpg?lqip'),
-                  fluid: require('../images/twos.jpg?resize&sizes[]=200&sizes[]=600&sizes[]=1000'),
+              <Img
+                className="dt tc h5 vh-50-l w-100"
+                Tag="header"
+                cloudName={'norfolkpunt'}
+                imageName={data.feature.split('/').pop()}
+                fluid={{
+                  maxWidth: 300,
+                  height: 300,
                 }}
               />
             </div>
@@ -47,3 +53,13 @@ export default () => (
     </div>
   </>
 )
+
+export async function getStaticProps({ params }) {
+  const { data, content } = getHome()
+  return {
+    props: {
+      data,
+      content,
+    },
+  }
+}

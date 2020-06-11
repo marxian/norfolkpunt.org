@@ -7,9 +7,4 @@ yarn-error.log
 .DS_Store
 .next
 
-# Generated data
-/images.js
-/punts.json
-/pictures.js
-
 .env

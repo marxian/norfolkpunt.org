@@ -1,23 +1,28 @@
 import React from 'react'
-import images from '../images'
-import Image from './Image'
+
+import Img from 'react-cloudinary-lazy-image'
 
 export default ({ punt, className }) => (
   <div className={`${className} bg-black-90 white tc grow`}>
     {/* <Link href={`/boats/${punt.slug}`}>
       <a className="db link dim tc"> */}
     {punt.coverImage ? (
-      <Image
-        data={{
-          ...images[punt.coverImage],
-          aspectRatio: 1,
+      <Img
+        cloudName={'norfolkpunt'}
+        imageName={punt.coverImage.split('/').pop()}
+        fluid={{
+          maxWidth: 300,
+          height: 300,
         }}
+        urlParams="c_fill,g_auto"
       />
     ) : (
-      <Image
-        data={{
-          lqip: require('../images/photograph-wanted.png?lqip'),
-          fluid: require('../images/photograph-wanted.png?resize&sizes[]=200&sizes[]=600&sizes[]=1000&sizes=2000'),
+      <Img
+        cloudName="norfolkpunt"
+        imageName="photograph-wanted"
+        fluid={{
+          maxWidth: 300,
+          height: 300,
         }}
       />
     )}
