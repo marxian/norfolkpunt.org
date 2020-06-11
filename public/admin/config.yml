@@ -32,7 +32,10 @@ collections:
     folder: "content/boats"
     preview_path: "punts/{{slug}}"
     create: true
+    preview: false
     slug: "{{name}}-{{fields.sailNumber}"
+    summary: "{{name}} {{sailNumber}} - {{design}}"
+    sortableFields: ["name", "sailNumber", "yearBuilt", "design"]
     extension: md
     identifier_field: name
     fields:
