@@ -62,7 +62,7 @@
     "eslint-plugin-react-hooks": "4.0.4",
     "husky": "4.2.5",
     "json-to-pretty-yaml": "1.2.2",
-    "lint-staged": "10.2.9",
+    "lint-staged": "10.2.11",
     "netlify-cms-proxy-server": "1.2.8",
     "papaparse": "5.2.0",
     "prettier": "2.0.5"
