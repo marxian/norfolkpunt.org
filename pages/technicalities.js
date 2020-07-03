@@ -36,7 +36,7 @@ export default () => (
       <iframe
         title="Calendar"
         src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=bm9yZm9sa3B1bnRAZ21haWwuY29t&amp;color=%2322AA99&amp;showDate=1&amp;showNav=1&amp;showTitle=0&amp;showCalendars=0&amp;hl=en_GB&amp;showTabs=0&amp;showPrint=0&amp;showTz=0"
-        style={{ 'border-width': 0 }}
+        style={{ borderWidth: 0 }}
         width="100%"
         height="600"
         frameBorder="0"

@@ -10,7 +10,7 @@ export default ({ data }) => (
       cloudName={'norfolkpunt'}
       imageName={data.banner.split('/').pop()}
       fluid={{
-        maxWidth: 970,
+        maxWidth: 1000,
         height: 250,
       }}
       urlParams="c_fill,g_auto"
@@ -30,8 +30,8 @@ export default ({ data }) => (
                 cloudName={'norfolkpunt'}
                 imageName={data.feature.split('/').pop()}
                 fluid={{
-                  maxWidth: 300,
-                  height: 300,
+                  maxWidth: 280,
+                  height: 280,
                 }}
               />
             </div>
