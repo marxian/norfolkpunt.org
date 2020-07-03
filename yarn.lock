@@ -7075,10 +7075,10 @@ netlify-cms-oauth-provider-node@1.1.0:
     simple-oauth2 "^3.1.0"
     verror "^1.10.0"
 
-netlify-cms-proxy-server@1.2.8:
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/netlify-cms-proxy-server/-/netlify-cms-proxy-server-1.2.8.tgz#73d0c04876e0d2a652974793cba4fa5e177bb584"
-  integrity sha512-O58UFmWbcdzuNrLkhEDxyJ0JqhI7PzQXufiDcv/JEID1ZEdCazeH7n+ISymg+qvXzIq/325GNPsXL4Xc9ahOZQ==
+netlify-cms-proxy-server@1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/netlify-cms-proxy-server/-/netlify-cms-proxy-server-1.2.9.tgz#a3a408420d13eb79ad455a8b6f6c79909382a4af"
+  integrity sha512-6JHgSO10BlgpSigUw5FAm8hv+FKEIC1BMj6zb6NEVHCWVfFnXg4BmLecPa3Q/Rtwwj/t+QHQNg2upQl3cM8ywg==
   dependencies:
     "@hapi/joi" "^17.0.2"
     cors "^2.8.5"
@@ -7086,6 +7086,7 @@ netlify-cms-proxy-server@1.2.8:
     express "^4.17.1"
     morgan "^1.9.1"
     simple-git "^2.0.0"
+    what-the-diff "^0.6.0"
 
 next-compose-plugins@2.2.0:
   version "2.2.0"
@@ -10968,6 +10969,11 @@ webpack@4.43.0:
     terser-webpack-plugin "^1.4.3"
     watchpack "^1.6.1"
     webpack-sources "^1.4.1"
+
+what-the-diff@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/what-the-diff/-/what-the-diff-0.6.0.tgz#445cc56a9d8ee9aea0ee1ed943f4957ae009291e"
+  integrity sha512-8BgQ4uo4cxojRXvCIcqDpH4QHaq0Ksn2P3LYfztylC5LDSwZKuGHf0Wf7sAStjPLTcB8eCB8pJJcPQSWfhZlkg==
 
 whatwg-fetch@3.0.0:
   version "3.0.0"

@@ -63,7 +63,7 @@
     "husky": "4.2.5",
     "json-to-pretty-yaml": "1.2.2",
     "lint-staged": "10.2.11",
-    "netlify-cms-proxy-server": "1.2.8",
+    "netlify-cms-proxy-server": "1.2.9",
     "papaparse": "5.2.0",
     "prettier": "2.0.5"
   },
