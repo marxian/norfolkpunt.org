@@ -7,8 +7,11 @@ construction: "Wood (Carvel)"
 design: "Traditional"
 designer: "Herbert Woods"
 owners:
-  - from: 1992
+  - from: 2019
     to: null
+    owner: "Colin Murray"
+  - from: 1992
+    to: 2019
     owner: "A G Thaine"
   - from: 1962
     to: 1993
